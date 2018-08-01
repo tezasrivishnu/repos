@@ -1,8 +1,11 @@
-varA = input()
-varB = input()
+varA = "String"
+varB = "fox"
 if type(varA) == str or type(varB) == str:
 	print("string involved")
-elif varA>varB :
+varA = 10
+varB = 14
+
+if varA>varB :
      print("bigger")
 elif varA == varB :
      print("equal")
