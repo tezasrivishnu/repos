@@ -30,8 +30,8 @@ def main():
             if c_s > mc_s:
                 mc_s = c_s
                 r_c = char + 1
-    else:
-        c_s = 0
+        else:
+            c_s = 0
     sp_s = r_c - mc_s
     print(s_str[sp_s:r_c+1])
 
