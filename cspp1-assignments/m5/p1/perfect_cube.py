@@ -16,13 +16,13 @@ def main():
     '''
     s_in = int(input())
     ans_c = 0
-    while ans_c**3< abs(s_in):
+    while ans_c**3 < abs(s_in):
         ans_c = ans_c + 1
     if ans_c**3 != abs(s_in):
         print(str(s_in) + " is not a perfect cube")
     else:
         if s_in < 0:
-            ans_c = -ans
+            ans_c = -ans_c
         print(str(s_in) + " is a perfect cube")
 if __name__ == "__main__":
     main()
