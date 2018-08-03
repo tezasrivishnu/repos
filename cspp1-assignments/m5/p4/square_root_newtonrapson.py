@@ -17,7 +17,7 @@ def main():
     '''
     s_in = int(input())
     epsilon_c = 0.01
-    guess_g = s/2.0
+    guess_g = s_in/2.0
     nguess_g = 0
     while (guess_g*guess_g-s_in) >= epsilon_c and guess_g <= s_in:
         nguess_g += 1
