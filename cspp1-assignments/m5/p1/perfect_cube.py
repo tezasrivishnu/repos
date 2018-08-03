@@ -16,7 +16,7 @@ def main():
     '''
     s_in = int(input())
     ans_c = 0
-    while ans_c**3< abs(s):
+    while ans_c**3< abs(s_in):
         ans_c = ans_c + 1
     if ans_c**3 != abs(s_in):
         print(str(s_in) + " is not a perfect cube")
