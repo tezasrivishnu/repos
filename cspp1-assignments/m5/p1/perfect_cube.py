@@ -23,6 +23,6 @@ def main():
     else:
         if s_in < 0:
             ans_c = -ans
-    print(str(s_in) + " is a perfect cube")
+        print(str(s_in) + " is a perfect cube")
 if __name__ == "__main__":
     main()
