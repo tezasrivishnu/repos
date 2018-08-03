@@ -1,4 +1,4 @@
-# Write a python program to find the square root of the given number
+'''# Write a python program to find the square root of the given number
 # using approximation method
 
 # testcase 1
@@ -8,14 +8,22 @@
 # testcase 2
 # input: 49
 # output: 6.999999999999991
-
+'''
 def main():
-	s = raw_input()
-	# epsilon and step are initialized
-	# don't change these values
-	epsilon = 0.01
-	step = 0.1
-	# your code starts here
-
-if __name__== "__main__":
+	''' we have to find the square root of a given number 
+	using bi-section methos
+	'''
+	s_i = int(input())
+	epsilon_i = 0.01
+	low_i = 0
+	high_i = s_i
+	ans_i = (low_i + high_i)/2
+	while abs(ans_i**2 - s_i) >= epsilon_i:
+    	if ans_i**2 < s_i:
+        	low_i = ans_i
+    	else:
+        	high_i = ans_i
+    	ans_i = (low_i + high_i)/2
+	print(ans_i)
+if __name__ == "__main__":
 	main()
