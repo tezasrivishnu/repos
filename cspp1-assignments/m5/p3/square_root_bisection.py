@@ -10,7 +10,7 @@
 # output: 6.999999999999991
 '''
 def main():
-    ''' we have to find the square root of a given number 
+    ''' we have to find the square root of a given number
     using bi-section methos
     '''
     s_in = int(input())
