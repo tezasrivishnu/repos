@@ -11,19 +11,19 @@
 # output: 6.999999999999991
 '''
 def main():
-	'''
-	to find out square root of a number
-	using approximation
-	'''
-	s_i = int(input())
-	epsilon_i = 0.01
-	guess_i = 0.0
-	i_i = 0.1
-	while abs(guess_i**2-s_i) >= epsilon_i and guess_i <= s_i:
-		guess_i += i_i
-	if abs(guess_i**2-s_i) >= epsilon_i:
-		print("failed")
-	else:
-		print(str(guess_i))
+    '''
+    to find out square root of a number
+    using approximation
+    '''
+    s_i = int(input())
+    epsilon_i = 0.01
+    guess_i = 0.0
+    i_i = 0.1
+    while abs(guess_i**2-s_i) >= epsilon_i and guess_i <= s_i:
+        guess_i += i_i
+    if abs(guess_i**2-s_i) >= epsilon_i:
+        print("failed")
+    else:
+        print(str(guess_i))
 if __name__ == "__main__":
-	main()
+    main()
