@@ -21,7 +21,7 @@ def main():
     nguess_g = 0
     while (guess_g*guess_g-s_in) >= epsilon_c and guess_g <= s_in:
         nguess_g += 1
-        guess_g = guess_g - (((guess_g**2) - s)/(2*guess_g))
+        guess_g = guess_g - (((guess_g**2) - s_in)/(2*guess_g))
     print(guess_g)
 if __name__ == "__main__":
     main()
