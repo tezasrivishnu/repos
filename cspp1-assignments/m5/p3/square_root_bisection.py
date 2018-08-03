@@ -19,7 +19,7 @@ def main():
     high_i = s_in
     ans_i = (low_i + high_i)/2
     while abs(ans_i**2 - s_in) >= epsilon_i:
-        if ans_i**2 < s_in :
+        if ans_i**2 < s_in:
             low_i = ans_i
         else:
             high_i = ans_i
