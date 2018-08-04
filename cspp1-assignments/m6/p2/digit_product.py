@@ -1,6 +1,8 @@
 s = input()
-l = len(s)
+l = list(s)
+i = 1
 p = 1
-for x in s in range(0,len(s)+1,2):
-	p = p*s[x]*s[x+1]
+while i+1 <= len(l):
+	p *= l[i]*l[i+1]
+	i += 2
 print(p)
