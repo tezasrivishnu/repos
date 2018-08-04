@@ -13,7 +13,7 @@ def main():
     i_i = 1
     p_i = 1
     while i_i+1 <= len(l_i):
-        p_i *= l[i_i]*l[i_i+1]
+        p_i *= l_i[i_i]*l_i[i_i+1]
         i_i += 2
     print(p_i)
 if __name__ == "__main__":
