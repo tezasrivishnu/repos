@@ -12,16 +12,16 @@ def main():
     FizzBuzz for multiples of 5.
     '''
     num_i = int(input())
-	i_i = 1
-	while i_i <= num_i:
-		if (i_i % 3 == 0) and (i_i % 5) == 0:
-			print("FizzBuzz")
-		elif i_i % 5 == 0:
-			print("Buzz")
-		elif i_i % 3 == 0:
-			print("Fizz")
-		else:
-			print(i_i)
-		i_i += 1
+    i_i = 1
+    while i_i <= num_i:
+        if (i_i % 3 == 0) and (i_i % 5) == 0:
+            print("Fizz\nBuzz")
+        elif i_i % 5 == 0:
+            print("Buzz")
+        elif i_i % 3 == 0:
+            print("Fizz")
+        else:
+            print(i_i)
+        i_i += 1
 if __name__ == "__main__":
     main()
