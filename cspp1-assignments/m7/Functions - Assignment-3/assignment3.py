@@ -54,13 +54,13 @@ def payingDebtOffInAYear(balance, annualInterestRate):
             upper = monthlyPaymentRate
         else:
             break
-    return "Lowest Payment:", str(round(monthlyPaymentRate, 2))
+    return str(round(monthlyPaymentRate, 2))
 def main():
     data = input()
     # data = "4773 0.2"
     data = data.split(' ')
     data = list(map(float, data))
-    print(payingDebtOffInAYear(data[0], data[1]))
+    print("Lowest Payment:", payingDebtOffInAYear(data[0], data[1]))
     
 if __name__ == "__main__":
     main()
