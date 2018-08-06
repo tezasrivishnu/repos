@@ -23,11 +23,11 @@
 
 
 def payingDebtOffInAYear(balance, annualInterestRate):
-    minimumFixedPayment = 0.0
-    monthlyInterestRate = annualInterestRate/12.0
+    minimumFixedPayment = 0
+    monthlyInterestRate = annualInterestRate/12
     myBalance = balance
-    while myBalance > 0.0:
-        minimumFixedPayment += 10.0
+    while myBalance > 0:
+        minimumFixedPayment += 10
         for month in range (0, 12):
             myBalance -= minimumFixedPayment
             myBalance += (myBalance * monthlyInterestRate)
