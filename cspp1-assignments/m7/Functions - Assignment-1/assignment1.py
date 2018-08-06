@@ -31,21 +31,27 @@ balance at the end of the year in the format:
 '''
 
 def payingDebtOffInAYear(balance, annualInterestRate, monthlyPaymentRate):
+    '''
+    input - int or floats for all three inputs
+    output - float value
+    '''
     for m in range(1, 13):
-        pay = balance * monthlyPaymentRate
-        balance -= pay
-        interest = balance * annualInterestRate / 12
-        updbalance = balance
-        balance += interest
-    remaining = updbalance + interest
-    return("Remaining balance: " + str(round(remaining , 2)))
+        pay_ment = balance_am * monthlyPaymentRate_rate
+        balance_am -= pay_ment
+        interest_rate = balance_am * annualInterestRate_rate / 12
+        updbalance_bal = balance_am
+        balance_am += interest_rate
+    remaining_am = updbalance_bal + interest_rate
+    return "Remaining balance: " + str(round(remaining_am ,2))
 
 def main():
+    '''
+    find out the remaingbalnce for a credit card after one year
+    '''
     data = input()
     data = data.split(' ')
     data = list(map(float, data))
-    print(payingDebtOffInAYear(data[0],data[1],data[2]))
+    print(payingDebtOffInAYear(data[0], data[1], data[2]))
 
 if __name__ == "__main__":
     main()
-
