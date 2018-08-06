@@ -33,7 +33,7 @@ def payingDebtOffInAYear(balance, annualInterestRate):
             myBalance += (myBalance * monthlyInterestRate)
         if myBalance > 0:
             myBalance = balance
-    print ("Lowest Payment " + str(minimumFixedPayment))
+    return "Lowest Payment: " + str(minimumFixedPayment)
 def main():
     data = input()
     data = data.split(' ')
