@@ -30,7 +30,7 @@ balance at the end of the year in the format:
 (Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)
 '''
 
-def payingdebtOffinayear_i(balance_am, annualinterestrate_rate, monthlypaymentrate_rate):
+def payingdebtoffinayear_i(balance_am, annualinterestrate_rate, monthlypaymentrate_rate):
     '''
     input - int or floats for all three inputs
     output - float value
@@ -51,7 +51,7 @@ def main():
     data = input()
     data = data.split(' ')
     data = list(map(float, data))
-    print(payingdebtOffinayear_i(data[0], data[1], data[2]))
+    print(payingdebtoffinayear_i(data[0], data[1], data[2]))
 
 if __name__ == "__main__":
     main()
