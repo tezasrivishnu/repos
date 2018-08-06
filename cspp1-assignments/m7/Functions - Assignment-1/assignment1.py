@@ -35,7 +35,7 @@ def payingdebtoffinayear_i(balance_am, annualinterestrate_rate, monthlypaymentra
     input - int or floats for all three inputs
     output - float value
     '''
-    for i in range(1, 13):
+    for _ in range(1, 13):
         pay_ment = balance_am * monthlypaymentrate_rate
         balance_am -= pay_ment
         interest_rate = balance_am * annualinterestrate_rate / 12
