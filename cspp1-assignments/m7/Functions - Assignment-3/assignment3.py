@@ -77,6 +77,10 @@ def payingDebtOffInAYear(balance_i, annual_interestrate):
             break
     return str(round(monthly_paymentrate, 2))
 def main():
+    '''
+    we have to finf the lowest amout that has to be paid to make payment 
+    zero
+    '''
     data = input()
     # data = "4773 0.2"
     data = data.split(' ')
