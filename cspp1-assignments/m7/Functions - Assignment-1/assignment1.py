@@ -30,7 +30,7 @@ balance at the end of the year in the format:
 (Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)
 '''
 
-def payingDebtOffInAYear(balance, annualInterestRate, monthlyPaymentRate):
+def payingDebtOffInAYear(balance_am, annualInterestRate_rate, monthlyPaymentRate_rate):
     '''
     input - int or floats for all three inputs
     output - float value
