@@ -54,7 +54,7 @@ your solution to Problem 2 to compare!). Produce the same return
 '''
 
 
-def payingDebtOffInAYear(balance_i, annual_interestrate):
+def payingdebt_offinayear(balance_i, annual_interestrate):
     '''
     input : int or float
     output returns float value
@@ -78,14 +78,13 @@ def payingDebtOffInAYear(balance_i, annual_interestrate):
     return str(round(monthly_paymentrate, 2))
 def main():
     '''
-    we have to finf the lowest amout that has to be paid to make payment 
+    we have to finf the lowest amout that has to be paid to make payment
     zero
     '''
     data = input()
     # data = "4773 0.2"
     data = data.split(' ')
     data = list(map(float, data))
-    print("Lowest Payment:", payingDebtOffInAYear(data[0], data[1]))
-    
+    print("Lowest Payment:", payingdebt_offinayear(data[0], data[1]))
 if __name__ == "__main__":
     main()
