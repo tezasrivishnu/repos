@@ -38,7 +38,7 @@ def payingDebtOffInAYear(balance, annualInterestRate, monthlyPaymentRate):
         updbalance = balance
         balance += interest
     remaining = updbalance + interest
-    return str(round(remaining , 2))
+    return("Remaining balance: " + str(round(remaining , 2)))
 
 def main():
     data = input()
