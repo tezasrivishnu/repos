@@ -22,27 +22,23 @@
 # Updated balance each month = (Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)
 
 
-def payingDebtOffInAYear(balance, monthlyInterestRate, set):
-    if balance<=0:
-        monthlyPaymentRate = 0
-        return monthlyPaymentRate
-    month = 0
-    monthlyPaymentRate = 10
-    init_balance = balance
-    while balance <= 12:
-        month += 1
-        balance = balance - monthlyPaymentRate + ((balance - monthlyPaymentRate) * monthlyInterestRate)
-        if balance <= 0 and month == 12:
-            return monthlyPaymentRate
-        elif balance >= 0 and month == 12:
-            monthlyPaymentRate += 10
-            month = 0
-            balance = set
+def payingDebtOffInAYear(balance, annualInterestRate):
+    minimumFixedPayment = 0.0
+    monthlyInterestRate = annualInterestRate/12.0
+    myBalance = balance
+    while myBalance > 0.0:
+        minimumFixedPayment += 10.0
+        for month in range (0, 12):
+            myBalance -= minimumFixedPayment
+            myBalance += (myBalance * monthlyInterestRate)
+        if myBalance > 0:
+            myBalance = balance
+    print ("Lowest Payment " + str(minimumFixedPayment))
 def main():
     data = input()
     data = data.split(' ')
     data = list(map(float, data))
-    print(payingDebtOffInAYear(data[0], data[1], data[0]))
+    print(payingDebtOffInAYear(data[0], data[1]))
     
 if __name__ == "__main__":
     main()
