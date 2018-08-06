@@ -16,7 +16,7 @@ def odd(x_i):
     return x_i%2 != 0
 def main():
     '''
-    we are giving input data
+    we are giving input data for calling odd function
     '''
     data_i = input()
     print(odd(int(data_i)))
