@@ -35,7 +35,7 @@ def payingDebtOffInAYear(balance_am, annualinterestrate_rate, monthlypaymentrate
     input - int or floats for all three inputs
     output - float value
     '''
-    for mon_th in range(1, 13):
+    for i_mo in range(1, 13):
         pay_ment = balance_am * monthlypaymentrate_rate
         balance_am -= pay_ment
         interest_rate = balance_am * annualinterestrate_rate / 12
@@ -51,7 +51,7 @@ def main():
     data = input()
     data = data.split(' ')
     data = list(map(float, data))
-    print(payingDebtOffInAYear(data[0], data[1], data[2]))
+    print(payingdebtOffinayear(data[0], data[1], data[2]))
 
 if __name__ == "__main__":
     main()
