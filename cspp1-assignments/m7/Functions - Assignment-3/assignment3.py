@@ -38,31 +38,31 @@
 
 
 def payingDebtOffInAYear(balance, annualInterestRate):
-    epsilon = 0.01
-    lower = balance / 12
-    upper = balance * ((1 + annualInterestRate / 12.0) ** 12) / 12.0
-    ans = (lower + upper) / 2.0
-    myBalance = balance
-    for m in range(12):
-        interest = (myBalance - monthlyPayment) * annualInterestRate / 12.0
-        myBalance = myBalance + interest - monthlyPayment
-    return myBalance
-
-while abs(payingDebtOffInAYear(ans)) >= epsilon:
-        # print("lower = " + str(lower) + " upper = " + str(upper) + " ans = " + str(ans))
-    if payingDebtOffInAYear(ans) < 0:
-        upper = ans
-    else:
-        lower = ans
-    ans = (lower + upper) / 2.0
-        
-print ("Lowest Payment: " + str(round(ans, 2)))
+	balance = float(input())
+	annualInterestRate = float(input())
+	init_balance = balance
+	monthlyInterestRate = annualInterestRate/12
+	lower = init_balance/12
+	upper = (init_balance * (1 + monthlyInterestRate)**12)/12.0
+	epsilon = 0.03
+	while abs(balance) > epsilon:
+	    monthlyPaymentRate = (upper + lower)/2
+	    balance = init_balance
+	    for i in range(12):
+	        balance = balance - monthlyPaymentRate + ((balance - monthlyPaymentRate) * monthlyInterestRate)
+	    if balance > epsilon:
+	        lower = monthlyPaymentRate
+	    elif balance < -epsilon:
+	        upper = monthlyPaymentRate
+	    else:
+	        break
+	print('Lowest Payment:', round(monthlyPaymentRate, 2))
 def main():
     data = input()
     # data = "4773 0.2"
     data = data.split(' ')
     data = list(map(float, data))
-    print(payingDebtOffInAYear(data[0],data[1]))
+    print(payingDebtOffInAYear(data[0], data[1]))
     
 if __name__== "__main__":
     main()
