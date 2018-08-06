@@ -30,23 +30,31 @@ the required math is found below:
 interest rate x Monthly unpaid balance)
 '''
 
-def payingDebtOffInAYear(balance_i, annual_interestrate):
+def paying_debtoffinayear(balance_i, annual_interestrate):
+    '''
+    input - int or float
+    output will return int value
+    '''
     minimum_fixedpayment = 0
     monthly_interestrate = annual_interestrate/12
     my_balance = balance_i
     while my_balance > 0:
         minimum_fixedpayment += 10
-        for month in range (0, 12):
+        for _ in range (0, 12):
             my_balance -= minimum_fixedpayment
             my_balance += (my_balance * monthly_interestrate)
         if my_balance > 0:
             my_balance = balance_i
     return "Lowest Payment: " + str(minimum_fixedpayment)
 def main():
+    '''
+    we have to find the minimum fixed
+    monthly payment needed in order pay off a credit card balance within 12 months
+    '''
     data = input()
     data = data.split(' ')
     data = list(map(float, data))
-    print(payingDebtOffInAYear(data[0], data[1]))
+    print(paying_debtoffinayear(data[0], data[1]))
     
 if __name__ == "__main__":
     main()
