@@ -67,7 +67,7 @@ def payingdebt_offinayear(balance_i, annual_interestrate):
     while abs(balance_i) > epsilon_i:
         monthly_paymentrate = (upper_i + lower_i)/2
         balance_i = init_balance
-        for i in range(12):
+        for _ in range(12):
             balance_i = balance_i - monthly_paymentrate + ((balance_i - monthly_paymentrate) * monthly_interestrate)
         if balance_i > epsilon_i:
             lower_i = monthly_paymentrate
