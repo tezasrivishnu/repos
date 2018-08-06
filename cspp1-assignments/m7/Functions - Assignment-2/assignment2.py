@@ -40,7 +40,7 @@ def paying_debtoffinayear(balance_i, annual_interestrate):
     my_balance = balance_i
     while my_balance > 0:
         minimum_fixedpayment += 10
-        for _ in range (0, 12):
+        for _ in range(0, 12):
             my_balance -= minimum_fixedpayment
             my_balance += (my_balance * monthly_interestrate)
         if my_balance > 0:
@@ -55,6 +55,5 @@ def main():
     data = data.split(' ')
     data = list(map(float, data))
     print(paying_debtoffinayear(data[0], data[1]))
-    
 if __name__ == "__main__":
     main()
