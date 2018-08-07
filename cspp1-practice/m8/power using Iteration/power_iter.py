@@ -18,10 +18,6 @@ def iterPower(base, exp):
         for _ in range(1,exp):
             res *= base
     return res
-    
-
-    
-
 
 def main():
 
