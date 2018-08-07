@@ -6,25 +6,25 @@ returns the sum of digits of given number.
 # This function takes in one number and returns one number.
 '''
 l = []
-def sumofdigits(n):
+def sumofdigits(n_i):
     '''
     n is positive Integer
 
     returns: a positive integer, the sum of digits of n.
     '''
-    if(n==0):
+    if(n_i==0):
         return 0
-    dig=n%10
-    l.append(dig)
-    sumofdigits(n//10)
-    a = sum(l)
-    return a
+    dig_it=n_i%10
+    l.append(dig_it)
+    sumofdigits(n_i//10)
+    fi_nal = sum(l)
+    return fi_nal
 def main():
     '''
     giving input for to find the sum of digits
     '''
-    a = input()
-    print(sumofdigits(int(a)))  
+    a_i = input()
+    print(sumofdigits(int(a_i)))  
 if __name__== "__main__":
     main()
 
