@@ -10,13 +10,13 @@ def sumofdigits(n):
 
     returns: a positive integer, the sum of digits of n.
     '''
-	if(n==0):
-		return l
-	dig=n%10
-	l.append(dig)
+    if(n==0):
+        return l
+    dig=n%10
+    l.append(dig)
     sumofdigits(n//10)
     a = sum(l)
-	return a
+    return a
 def main():
     a = input()
     print(sumofdigits(int(a)))  
