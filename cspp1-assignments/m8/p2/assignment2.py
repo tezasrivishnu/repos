@@ -15,7 +15,7 @@ def sumofdigits(n_i):
     if n_i == 0:
         return 0
     dig_it = n_i%10
-    l.append(dig_it)
+    l_ist.append(dig_it)
     sumofdigits(n_i//10)
     fi_nal = sum(l_ist)
     return fi_nal
