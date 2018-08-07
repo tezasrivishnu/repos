@@ -5,7 +5,7 @@ returns the sum of digits of given number.
 
 # This function takes in one number and returns one number.
 '''
-l_ist = []
+li_st = []
 def sumofdigits(n_i):
     '''
     n is positive Integer
@@ -15,9 +15,9 @@ def sumofdigits(n_i):
     if n_i == 0:
         return 0
     dig_it = n_i%10
-    l_ist.append(dig_it)
+    li_st.append(dig_it)
     sumofdigits(n_i//10)
-    fi_nal = sum(l_ist)
+    fi_nal = sum(li_st)
     return fi_nal
 def main():
     '''
