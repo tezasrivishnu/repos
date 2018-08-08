@@ -19,7 +19,7 @@ def is_word_guessed(secret_word, letters_guessed):
             return False
         else: 
             return True
-    pass
+        pass
 
 def main():
     '''
