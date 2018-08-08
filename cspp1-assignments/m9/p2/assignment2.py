@@ -9,9 +9,10 @@ different from isWordGuessed!
 
 def get_guessed_word(secret_word, letters_guessed):
     '''
-    secret_word: string, the word the user is guessing
-    letters_guessed: list, what letters have been guessed so far
-    returns: string, comprised of letters and underscores that represents
+    Initiaisation 
+    :param secret_word: string, the word the user is guessing
+    :param letters_guessed: list, what letters have been guessed so far
+    :returns: string, comprised of letters and underscores that represents
       what letters in secret_word have been guessed so far.
     '''
     result = []
