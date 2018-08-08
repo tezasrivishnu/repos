@@ -17,9 +17,7 @@ def is_word_guessed(secret_word, letters_guessed):
     for i in secret_word:
         if i not in letters_guessed:
             return False
-        else: 
-            return True
-        pass
+    return True
 
 def main():
     '''
