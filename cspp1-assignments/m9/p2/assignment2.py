@@ -21,8 +21,6 @@ def get_guessed_word(secret_word, letters_guessed):
         else:
             result.append('_')
     return ''.join(result)
-    pass
-
 def main():
     '''
     Main function for current assignment
@@ -38,6 +36,5 @@ def main():
     for j in range(1, len(data)):
         list1.append(data[j][0])
     print(get_guessed_word(secret_word, list1))
-
 if __name__ == "__main__":
     main()
