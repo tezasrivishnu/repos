@@ -1,6 +1,7 @@
+'''
 #Exercise : Biggest Exercise
 #Write a procedure, called biggest, which returns the key corresponding to the entry with the largest number of values associated with it. If there is more than one such entry, return any one of the matching keys.
-
+'''
 
 def biggest(aDict):
     '''
@@ -8,7 +9,7 @@ def biggest(aDict):
 
     returns: The key with the largest number of values associated with it
     '''
-    res =[]
+    res = []
     i = 0
     for k in aDict.keys():
         if len(aDict[k]) > i:
