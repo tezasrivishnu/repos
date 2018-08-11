@@ -42,7 +42,7 @@ def unfollow(network, arg1, arg2):
     network_copy = network.copy()
     if arg1 in network:
         if arg2 in network[arg1]: 
-            list.remove(arg2)
+            network.remove(arg2)
     # map(lambda arg1: arg1.pop(arg2), network_copy)
     if arg1 in network:
         del network[arg1]
