@@ -45,7 +45,7 @@ def unfollow(network, arg1, arg2):
     #     del arg1[arg2]
     if arg1 in network_copy.keys():
         if arg2 in arg2: 
-            list.remove(arg2)
+            arg1.remove(arg2)
     return network_copy
 def delete_person(network, arg1):
     '''
