@@ -40,7 +40,7 @@ def unfollow(network, arg1, arg2):
     :returns a dict
     '''
     network_copy = network.copy()
-    map(lambda arg1: d.pop(arg2), network_copy)
+    map(lambda arg1: arg1.pop(arg2), network_copy)
     # if arg1 in network_copy.keys():
     #     del arg1[arg2]
     return network_copy
