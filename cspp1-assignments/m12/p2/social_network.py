@@ -31,8 +31,7 @@ def unfollow(network, arg1, arg2):
         so, this should result in removing arg2 from the followers list of arg1
         update the network dictionary and return it
     '''
-    # network_copy = network.copy()
-    # if arg1 in network_copy.keys()
+    network_copy = network.copy()
 def delete_person(network, arg1):
     '''
         2 arguments are passed to this function
@@ -48,7 +47,7 @@ def delete_person(network, arg1):
     #     key_split = line.split('delete')
         # key_split = key_split.strip()
         # key_s = key_split
-    del network_copy[arg1]
+    del network_copy['arg1']
     return network_copy
 def main():
     '''
