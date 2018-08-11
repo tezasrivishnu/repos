@@ -40,13 +40,13 @@ def unfollow(network, arg1, arg2):
     :returns a dict
     '''
     network_copy = network.copy()
-    if arg1 in network_copy.keys():
-        if arg2 in arg1: 
-            arg1.remove(arg2)
-    map(lambda arg1: arg1.pop(arg2), network_copy)
-    # if arg1 in network_copy.keys():
-    #     del arg1[arg2]
-    return network_copy
+    if arg1 in network:
+        if arg2 in network[arg1]: 
+            list.remove(arg2)
+    # map(lambda arg1: arg1.pop(arg2), network_copy)
+    if arg1 in network:
+        del network[arg1]
+    return network
 def delete_person(network, arg1):
     '''
         2 arguments are passed to this function
