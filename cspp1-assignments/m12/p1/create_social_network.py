@@ -41,10 +41,10 @@ def create_social_network(data):
         val_split = val_split.split(',')
         value_s = val_split
         if key_s in result_dict.keys():
-            if value_s not in res[key_s]:
-                res[key_s].append(value_s)
+            if value_s not in result_dict[key_s]:
+                result_dict[key_s].append(value_s)
         else:
-            res[key_s] = [value_s]
+            result_dict[key_s] = [value_s]
     # line = line.split('\n')
     return result_dict
 
