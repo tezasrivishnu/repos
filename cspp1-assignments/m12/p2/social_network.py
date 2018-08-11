@@ -3,7 +3,6 @@
     There are 3 functions below that have to be completed
     Note: PyLint score need not be 10/10 for this assignment. We expect 9.5/10
 '''
-
 def follow(network, arg1, arg2):
     '''
         3 arguments are passed to this function
@@ -23,7 +22,6 @@ def follow(network, arg1, arg2):
     else:
         network_copy[arg1] = [arg2]
     return network_copy
-    
 def unfollow(network, arg1, arg2):
     '''
         3 arguments are passed to this function
@@ -35,9 +33,6 @@ def unfollow(network, arg1, arg2):
     '''
     network_copy = network.copy()
     if arg1 in network_copy.keys():
-        
-
-
 def delete_person(network, arg1):
     '''
         2 arguments are passed to this function
@@ -55,8 +50,6 @@ def delete_person(network, arg1):
         # key_s = key_split
     del network_copy['arg1']
     return(network_copy)
-    
-
 def main():
     '''
         handling testcase input and printing output
@@ -75,6 +68,5 @@ def main():
             network = delete_person(network, output[1])
 
     print(network)
-
 if __name__ == "__main__":
     main()
