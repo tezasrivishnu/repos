@@ -12,6 +12,10 @@ def follow(network, arg1, arg2):
         so, this should result in adding arg2 to the followers list of arg1
         update the network dictionary and return it
     '''
+    '''
+    :params input---> a dict and two strings
+    :returns a dict
+    '''
     network_copy = network.copy()
     # for line in arg2:
     #     # key_split,val_split = line.split('follow')
@@ -31,7 +35,13 @@ def unfollow(network, arg1, arg2):
         so, this should result in removing arg2 from the followers list of arg1
         update the network dictionary and return it
     '''
+    '''
+    :params input---> a dict and two strings
+    :returns a dict
+    '''
     network_copy = network.copy()
+    for arg1 in network_copy.keys():
+        del arg1[arg2]
     return network_copy
 def delete_person(network, arg1):
     '''
@@ -42,6 +52,10 @@ def delete_person(network, arg1):
         so, this should result in deleting arg1 from network
         also, before deleting arg1, remove arg1 from the everyone's followers list
         update the network dictionary and return it
+    '''
+    '''
+    :params input--->a dict and a string
+    :returns a dict
     '''
     network_copy = network.copy()
     # for line in arg1:
