@@ -32,6 +32,7 @@ def unfollow(network, arg1, arg2):
         update the network dictionary and return it
     '''
     network_copy = network.copy()
+    return network_copy
 def delete_person(network, arg1):
     '''
         2 arguments are passed to this function
