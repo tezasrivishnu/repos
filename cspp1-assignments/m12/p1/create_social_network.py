@@ -35,7 +35,7 @@ def create_social_network(data):
     result_dict = {}
     line = data.splitlines()
     for eachline in line:
-        key_split,val_split = line.split(' follows ')
+        key_split, val_split = line.split(' follows ')
         # key_split = key_split.strip()
         key_s = key_split
         val_split = val_split.split(',')
