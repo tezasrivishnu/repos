@@ -49,7 +49,7 @@ def delete_person(network, arg1):
         # key_split = key_split.strip()
         # key_s = key_split
     del network_copy['arg1']
-    return(network_copy)
+    return network_copy
 def main():
     '''
         handling testcase input and printing output
