@@ -40,7 +40,7 @@ def unfollow(network, arg1, arg2):
     :returns a dict
     '''
     network_copy = network.copy()
-    for arg1 in network_copy.keys():
+    if arg1 in network_copy.keys():
         del arg1[arg2]
     return network_copy
 def delete_person(network, arg1):
