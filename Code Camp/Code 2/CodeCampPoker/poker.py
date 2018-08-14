@@ -53,8 +53,7 @@ def is_flush(hand):
             count += 1
     if count == len(hand):
         return True
-    else:
-        return False
+    return False
 
         # for x, y in range(5):
         #     if lis[][y] == lis[][y+1]:
@@ -76,8 +75,7 @@ def hand_rank(hand):
         return 2
     elif is_straight(hand):
         return 1
-    else:
-        return 0
+    return 0
     # By now you should have seen the way a card is represented.
     # If you haven't then go the main or poker function and print the hands
     # Each card is coded as a 2 character string. Example Kind of Hearts is KH
