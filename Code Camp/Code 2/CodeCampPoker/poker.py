@@ -78,8 +78,6 @@ def hand_rank(hand):
         return 1
     else:
         return 0
-    
-
     # By now you should have seen the way a card is represented.
     # If you haven't then go the main or poker function and print the hands
     # Each card is coded as a 2 character string. Example Kind of Hearts is KH
@@ -116,7 +114,6 @@ def poker(hands):
     # max uses the rank returned by hand_rank and returns the best hand
      
     return max(hands, key=hand_rank)
-
 if __name__ == "__main__":
     # read the number of test cases
     COUNT = int(input())
