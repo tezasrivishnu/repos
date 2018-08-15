@@ -55,7 +55,7 @@ def is_flush(hand):
         set_ = set()
         for face, suite in hand:
             set_.add(suite)
-        return 
+        return
     '''
     char = hand[0][1]
     count = 0
