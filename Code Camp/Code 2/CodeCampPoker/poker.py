@@ -5,6 +5,9 @@
 '''
 
 def sort(hand):
+    '''
+    appending face values into a list
+    '''
     newlist = []
     for character in hand:
         if character[0] == 'A':
@@ -49,7 +52,6 @@ def is_flush(hand):
         The second character is good enough to determine a flush
         Think of an algorithm: given the card suite how to check if it is a flush
         Write the code for it and return True if it is a flush else return False
-
         set_ = set()
         for face, suite in hand:
             set_.add(suite)
