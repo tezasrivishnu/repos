@@ -3,19 +3,8 @@
     Read about poker hands here.
     https://en.wikipedia.org/wiki/List_of_poker_hands
 '''
-
-def is_straight(hand):
-    '''
-        How do we find out if the given hand is a straight?
-        The hand has a list of cards represented as strings.
-        There are multiple ways of checking if the hand is a straight.
-        Do we need both the characters in the string? No.
-        The first character is good enough to determine a straight
-        Think of an algorithm: given the card face value how to check if it a straight
-        Write the code for it and return True if it is a straight else return False
-    '''
+def sort(hand):
     newlist = []
-    count = 0
     for character in hand:
         if character[0] == 'A':
             newlist.append(14)
@@ -29,7 +18,20 @@ def is_straight(hand):
             newlist.append(10)
         else:
             newlist.append(int(character[0]))
-    sor_lis = sorted(newlist)
+    return newlist
+
+def is_straight(hand):
+    '''
+        How do we find out if the given hand is a straight?
+        The hand has a list of cards represented as strings.
+        There are multiple ways of checking if the hand is a straight.
+        Do we need both the characters in the string? No.
+        The first character is good enough to determine a straight
+        Think of an algorithm: given the card face value how to check if it a straight
+        Write the code for it and return True if it is a straight else return False
+    '''
+    count = 0
+    sor_lis = sorted(sort(hand))
     # print(sor_lis)
     for i in range(len(sor_lis)-1):
         if int(sor_lis[i+1]) - int(sor_lis[i]) == 1:
@@ -37,6 +39,7 @@ def is_straight(hand):
     if count+1 == len(sor_lis):
         return True
     return False
+
 def is_flush(hand):
     '''
         How do we find out if the given hand is a flush?
@@ -65,6 +68,54 @@ def is_flush(hand):
         #         return True
         #     else:
         #         return False
+
+def is_fourofakind(hand):
+    count = 0
+    sor_lis = sorted(sort(hand))
+    for i in range(len(sor_lis)-3):
+        if sor_lis[i] == sor_lis[i+1] == sor_lis[i+2] == sor_lis[i+3]:
+            count += 1
+    if count == 1:
+        return True
+    return False
+
+def is_threeofakind(hand):
+    count = 0
+    sor_lis = sorted(sort(hand))
+    for i in range(len(sor_lis)-2):
+        if sor_lis[i] == sor_lis[i+1] == sor_lis[i+2]:
+            count += 1
+    if count == 1:
+        return True
+    return False
+
+def is_onepair(hand):
+    sor_lis = sorted(sort(hand))
+    set_list = set(sor_lis)
+    if len(sor_lis) - len(set_list) == 1:
+        return True
+    return False
+
+def is_twopair(hand):
+    sor_lis = sorted(sort(hand))
+    set_list = set(sor_lis)
+    if len(sor_lis) - len(set_list) == 2:
+        return True
+    return False
+
+def is_fullhouse(hand):
+    count = 0
+    i = 0
+    sor_lis = sorted(sort(hand))
+    # for i in range(len(sor_lis)):
+    if sor_lis[i] == sor_lis[i+1] == sor_lis[i+2] or sor_lis[i+3] == sor_lis[i+4]:
+        count += 1
+    elif sor_lis[i+3] == sor_lis[i+4] and sor_lis[i] == sor_lis[i+1] == sor_lis[i+2]:
+        count += 1
+    if count == 1:
+        return True
+    return False
+
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
@@ -73,13 +124,22 @@ def hand_rank(hand):
         The first version should identify if the given hand is a straight
         or a flush or a straight flush.
     '''
-
-    if is_flush(hand) and is_straight(hand):
+    if is_threeofakind():
         return 3
-    if is_flush(hand):
-        return 2
-    if is_straight(hand):
+    if is_onepair():
         return 1
+    if is_twopair():
+        return 2
+    if is_fullhouse():
+        return 7
+    if is_fourofakind():
+        return 4
+    if is_flush(hand) and is_straight(hand):
+        return 8
+    if is_flush(hand):
+        return 6
+    if is_straight(hand):
+        return 5
     return 0
     # By now you should have seen the way a card is represented.
     # If you haven't then go the main or poker function and print the hands
