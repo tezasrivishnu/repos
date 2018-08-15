@@ -124,15 +124,15 @@ def hand_rank(hand):
         The first version should identify if the given hand is a straight
         or a flush or a straight flush.
     '''
-    if is_threeofakind():
+    if is_threeofakind(hand):
         return 3
-    if is_onepair():
+    if is_onepair(hand):
         return 1
-    if is_twopair():
+    if is_twopair(hand):
         return 2
-    if is_fullhouse():
+    if is_fullhouse(hand):
         return 7
-    if is_fourofakind():
+    if is_fourofakind(hand):
         return 4
     if is_flush(hand) and is_straight(hand):
         return 8
