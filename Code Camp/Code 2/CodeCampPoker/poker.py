@@ -70,6 +70,9 @@ def is_flush(hand):
         #         return False
 
 def is_fourofakind(hand):
+    '''
+    if the four face values in a hand are same then the hand will be four of a kind
+    '''
     count = 0
     sor_lis = sorted(sort(hand))
     for i in range(len(sor_lis)-3):
@@ -80,6 +83,9 @@ def is_fourofakind(hand):
     return False
 
 def is_threeofakind(hand):
+    '''
+    if the three face values in a hand are same then the hand will be three of a kind
+    '''
     count = 0
     sor_lis = sorted(sort(hand))
     for i in range(len(sor_lis)-2):
@@ -90,6 +96,9 @@ def is_threeofakind(hand):
     return False
 
 def is_onepair(hand):
+    '''
+    if face values of one pair of cards in a hand is equal then hand is daid to be one pair
+    '''
     sor_lis = sorted(sort(hand))
     set_list = set(sor_lis)
     if len(sor_lis) - len(set_list) == 1:
@@ -97,6 +106,9 @@ def is_onepair(hand):
     return False
 
 def is_twopair(hand):
+    '''
+    if face values of two pair of cards in a hand is equal then hand is daid to be one pair
+    '''
     sor_lis = sorted(sort(hand))
     set_list = set(sor_lis)
     if len(sor_lis) - len(set_list) == 2:
@@ -104,6 +116,9 @@ def is_twopair(hand):
     return False
 
 def is_fullhouse(hand):
+    '''
+    three face values and two face values must be equal in a hand
+    '''
     count = 0
     i = 0
     sor_lis = sorted(sort(hand))
