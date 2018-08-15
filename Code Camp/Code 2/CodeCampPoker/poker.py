@@ -3,6 +3,7 @@
     Read about poker hands here.
     https://en.wikipedia.org/wiki/List_of_poker_hands
 '''
+
 def sort(hand):
     newlist = []
     for character in hand:
@@ -141,19 +142,19 @@ def hand_rank(hand):
     '''
     if is_threeofakind(hand):
         return 3
-    elif is_onepair(hand):
+    if is_onepair(hand):
         return 1
-    elif is_twopair(hand):
+    if is_twopair(hand):
         return 2
-    elif is_fullhouse(hand):
+    if is_fullhouse(hand):
         return 7
-    elif is_fourofakind(hand):
+    if is_fourofakind(hand):
         return 4
-    elif is_flush(hand) and is_straight(hand):
+    if is_flush(hand) and is_straight(hand):
         return 8
-    elif is_flush(hand):
+    if is_flush(hand):
         return 6
-    elif is_straight(hand):
+    if is_straight(hand):
         return 5
     return 0
     # By now you should have seen the way a card is represented.
