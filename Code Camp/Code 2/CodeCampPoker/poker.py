@@ -141,19 +141,19 @@ def hand_rank(hand):
     '''
     if is_threeofakind(hand):
         return 3
-    if is_onepair(hand):
+    elif is_onepair(hand):
         return 1
-    if is_twopair(hand):
+    elif is_twopair(hand):
         return 2
-    if is_fullhouse(hand):
+    elif is_fullhouse(hand):
         return 7
-    if is_fourofakind(hand):
+    elif is_fourofakind(hand):
         return 4
-    if is_flush(hand) and is_straight(hand):
+    elif is_flush(hand) and is_straight(hand):
         return 8
-    if is_flush(hand):
+    elif is_flush(hand):
         return 6
-    if is_straight(hand):
+    elif is_straight(hand):
         return 5
     return 0
     # By now you should have seen the way a card is represented.
