@@ -119,7 +119,7 @@ def is_onepair(hand):
             new_lis.append(float(0.10))
         else:
             new_lis.append(float(character[0])/float(100))
-    sor_lis = sorted(sort(new_lis))
+    sor_lis = sorted(new_lis)
     for i in sor_lis:
         if sor_lis.count(i) == 2:
             new_lis.append(i)
