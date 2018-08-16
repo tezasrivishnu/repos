@@ -148,13 +148,18 @@ def is_fullhouse(hand):
     i = 0
     sor_lis = sorted(sort(hand))
     # for i in range(len(sor_lis)):
+    new =[]
     if sor_lis[i] == sor_lis[i+1] == sor_lis[i+2] and sor_lis[i+3] == sor_lis[i+4]:
         count += 1
-    elif sor_lis[i+3] == sor_lis[i+4] and sor_lis[i] == sor_lis[i+1] == sor_lis[i+2]:
+        new.append(sor_lis[i])
+    elif sor_lis[i] == sor_lis[i+1] and sor_lis[i+2] == sor_lis[i+3] == sor_lis[i+4]:
         count += 1
-    if count == 1:
-        return True
-    return False
+        new.append(sor_lis[i+2])
+    if len(new) == 0:
+        return False
+    else:
+        maximum = max(new)/100
+    return (maximum+7)
 
 def is_highcard(hand):
 
@@ -185,7 +190,7 @@ def hand_rank(hand):
     if is_flush(hand) and is_straight(hand):
         return 8
     if is_fullhouse(hand):
-        return 7
+        return is_fullhouse(hand)
     if is_flush(hand):
         return 6
     if is_straight(hand):
