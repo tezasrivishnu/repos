@@ -150,7 +150,7 @@ def is_highcard(hand):
             new_lis.append(float(1.0))
         else:
             new_lis.append(float(character[0])/float(10))
-    return max(float(new_lis))
+    return max(new_lis)
 
 def hand_rank(hand):
     '''
