@@ -102,21 +102,45 @@ def is_onepair(hand):
     '''
     if face values of one pair of cards in a hand is equal then hand is daid to be one pair
     '''
-    sor_lis = sorted(sort(hand))
-    set_list = set(sor_lis)
-    if len(sor_lis) - len(set_list) == 1:
-        return True
-    return False
+    new_lis = []
+    for character in hand:
+        if character[0] == 'A':
+            new_lis.append(float(0.14))
+        elif character[0] == 'K':
+            new_lis.append(float(0.13))
+        elif character[0] == 'Q':
+            new_lis.append(float(0.12))
+        elif character[0] == 'J':
+            new_lis.append(float(0.11))
+        elif character[0] == 'T':
+            new_lis.append(float(0.10))
+        else:
+            new_lis.append(float(character[0])/float(100))
+    
+    new = []
+    sor_lis = sorted(new_lis)
+    for i in sor_lis:
+        if sor_lis.count(i) == 2:
+            new.append(i)
+    maximum = max(set(new))
+    return maximum+1
 
 def is_twopair(hand):
     '''
     if face values of two pair of cards in a hand is equal then hand is daid to be one pair
     '''
+    # sor_lis = sorted(sort(hand))
+    # set_list = set(sor_lis)
+    # if len(sor_lis) - len(set_list) == 2:
+    #     return True
+    # return False
+    new = []
     sor_lis = sorted(sort(hand))
-    set_list = set(sor_lis)
-    if len(sor_lis) - len(set_list) == 2:
-        return True
-    return False
+    for i in sor_lis:
+        if sor_lis.count(i) == 2:
+            new.append(i)
+    maximum = max(set(new))
+    print(maximum)
 
 def is_fullhouse(hand):
     '''
@@ -162,8 +186,8 @@ def hand_rank(hand):
     '''
     if is_threeofakind(hand):
         return 3
-    if is_onepair(hand):
-        return 1
+    if is_onepair(hand)<2:
+        return is_onepair(hand)
     if is_twopair(hand):
         return 2
     if is_fullhouse(hand):
