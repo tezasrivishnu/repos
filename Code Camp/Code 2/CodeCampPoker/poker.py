@@ -135,22 +135,9 @@ def is_fullhouse(hand):
     return False
 
 def is_highcard(hand):
-
-    new_lis = []
-    for character in hand:
-        if character[0] == 'A':
-            new_lis.append(float(1.4))
-        elif character[0] == 'K':
-            new_lis.append(float(1.3))
-        elif character[0] == 'Q':
-            new_lis.append(float(1.2))
-        elif character[0] == 'J':
-            new_lis.append(float(1.1))
-        elif character[0] == 'T':
-            new_lis.append(float(1.0))
-        else:
-            new_lis.append(float(character[0]/10))
-    return max(new_lis)
+    sor_lis = sorted(sort(hand))
+    return max(sor_lis)
+    
 
 def hand_rank(hand):
     '''
