@@ -149,7 +149,7 @@ def is_highcard(hand):
         elif character[0] == 'T':
             new_lis.append(0.10)
         else:
-            new_lis.append(int(character[0]/100))
+            new_lis.append(float(character[0]/100))
     return max(new_lis)
 
 def hand_rank(hand):
