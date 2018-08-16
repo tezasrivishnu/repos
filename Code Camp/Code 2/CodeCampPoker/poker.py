@@ -134,6 +134,23 @@ def is_fullhouse(hand):
         return True
     return False
 
+def is_highcard(hand):
+
+    new_lis = []
+    for character in hand:
+        if character[0] == 'A':
+            new_list.append(0.14)
+        elif character[0] == 'K':
+            new_list.append(0.13)
+        elif character[0] == 'Q':
+            new_list.append(0.12)
+        elif character[0] == 'J':
+            new_list.append(0.11)
+        elif character[0] == 'T':
+            new_list.append(0.10)
+        else:
+            new_list.append(int(character[0]/100))
+    return max(new_list)
 
 def hand_rank(hand):
     '''
@@ -159,7 +176,7 @@ def hand_rank(hand):
         return 6
     if is_straight(hand):
         return 5
-    return 0
+    return is_highcard(hand)
     # By now you should have seen the way a card is represented.
     # If you haven't then go the main or poker function and print the hands
     # Each card is coded as a 2 character string. Example Kind of Hearts is KH
