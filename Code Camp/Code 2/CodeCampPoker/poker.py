@@ -139,15 +139,15 @@ def is_highcard(hand):
     new_lis = []
     for character in hand:
         if character[0] == 'A':
-            new_lis.append(1.4)
+            new_lis.append(float(1.4)
         elif character[0] == 'K':
-            new_lis.append(1.3)
+            new_lis.append(float(1.3)
         elif character[0] == 'Q':
-            new_lis.append(1.2)
+            new_lis.append(float(1.2)
         elif character[0] == 'J':
-            new_lis.append(1.1)
+            new_lis.append(float(1.1))
         elif character[0] == 'T':
-            new_lis.append(1.0)
+            new_lis.append(float(1.0))
         else:
             new_lis.append(float(character[0]/10))
     return max(new_lis)
