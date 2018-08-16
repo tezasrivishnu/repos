@@ -125,8 +125,7 @@ def is_onepair(hand):
     # print(new)
     if len(new) == 0:
         return False
-    else:
-        maximum = max(new)
+    maximum = max(new)
         # print(maximum)
     return (maximum + 1)
 
@@ -144,25 +143,24 @@ def is_fullhouse(hand):
     '''
     three face values and two face values must be equal in a hand
     '''
-    count = 0
+    # count = 0
     i = 0
     sor_lis = sorted(sort(hand))
     # for i in range(len(sor_lis)):
     new =[]
     if sor_lis[i] == sor_lis[i+1] == sor_lis[i+2] and sor_lis[i+3] == sor_lis[i+4]:
-        count += 1
+        # count += 1
         new.append(sor_lis[i])
     elif sor_lis[i] == sor_lis[i+1] and sor_lis[i+2] == sor_lis[i+3] == sor_lis[i+4]:
-        count += 1
+        # count += 1
         new.append(sor_lis[i+2])
     if len(new) == 0:
         return False
     else:
         maximum = max(new)/100
-    return (maximum+7)
+    return maximum+7
 
 def is_highcard(hand):
-
     new_lis = []
     for character in hand:
         if character[0] == 'A':
@@ -203,8 +201,7 @@ def hand_rank(hand):
         return 2
     if is_onepair(hand):
         return is_onepair(hand)
-    else:
-        return is_highcard(hand)
+    return is_highcard(hand)
     # By now you should have seen the way a card is represented.
     # If you haven't then go the main or poker function and print the hands
     # Each card is coded as a 2 character string. Example Kind of Hearts is KH
