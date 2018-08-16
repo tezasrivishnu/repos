@@ -123,7 +123,7 @@ def is_onepair(hand):
         return False
     else:
         maximum = max(new_lis)
-    return maximum + 1
+    return (maximum + 1)
 
 def is_twopair(hand):
     '''
