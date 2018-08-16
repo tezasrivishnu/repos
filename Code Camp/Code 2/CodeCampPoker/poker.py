@@ -36,14 +36,10 @@ def is_straight(hand):
     '''
     count = 0
     sor_lis = sorted(sort(hand))
-    print(sor_lis)
-    # print(sor_lis)
     for i in range(len(sor_lis)-1):
         if int(sor_lis[i+1]) - int(sor_lis[i]) == 1:
             count += 1
-    print("count ", count)
     if count+1 == len(sor_lis):
-        print("hello")
         return True
     return False
 
