@@ -117,17 +117,17 @@ def is_onepair(hand):
             new_lis.append(float(character[0])/float(100))
 
     sor_lis = sorted(new_lis)
-    print(sor_lis)
+    # print(sor_lis)
     new = []
     for i in sor_lis:
         if sor_lis.count(i) == 2:
             new.append(i)
-    print(new)
+    # print(new)
     if len(new) == 0:
         return False
     else:
         maximum = max(new)
-        print(maximum)
+        # print(maximum)
     return (maximum + 1)
 
 def is_twopair(hand):
