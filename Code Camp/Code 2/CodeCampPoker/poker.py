@@ -165,22 +165,22 @@ def hand_rank(hand):
         The first version should identify if the given hand is a straight
         or a flush or a straight flush.
     '''
-    if is_threeofakind(hand):
-        return 3
-    if is_onepair(hand):
-        return is_onepair(hand)
-    if is_twopair(hand):
-        return 2
-    if is_fullhouse(hand):
-        return 7
-    if is_fourofakind(hand):
-        return 4
     if is_flush(hand) and is_straight(hand):
         return 8
+    if is_fullhouse(hand):
+        return 7
     if is_flush(hand):
         return 6
     if is_straight(hand):
         return 5
+    if is_fourofakind(hand):
+        return 4
+    if is_threeofakind(hand):
+        return 3
+    if is_twopair(hand):
+        return 2
+    if is_onepair(hand):
+        return is_onepair(hand)
     else:
         return is_highcard(hand)
     # By now you should have seen the way a card is represented.
