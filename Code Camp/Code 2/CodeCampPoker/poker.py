@@ -107,7 +107,7 @@ def is_onepair(hand):
     for i in sor_lis:
         if sor_lis.count(i) == 2:
             new.append(i)
-    maximum = max(set(new))
+    maximum = max(new)
     return maximum
 
 def is_twopair(hand):
