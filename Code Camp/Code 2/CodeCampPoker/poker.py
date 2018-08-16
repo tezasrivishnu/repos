@@ -36,11 +36,14 @@ def is_straight(hand):
     '''
     count = 0
     sor_lis = sorted(sort(hand))
+    print(sor_lis)
     # print(sor_lis)
     for i in range(len(sor_lis)-1):
         if int(sor_lis[i+1]) - int(sor_lis[i]) == 1:
             count += 1
+    print("count ", count)
     if count+1 == len(sor_lis):
+        print("hello")
         return True
     return False
 
@@ -102,16 +105,29 @@ def is_onepair(hand):
     '''
     if face values of one pair of cards in a hand is equal then hand is daid to be one pair
     '''
-    new = []
-    sor_lis = sorted(sort(hand))
+    new_lis = []
+    for character in hand:
+        if character[0] == 'A':
+            new_lis.append(float(0.14))
+        elif character[0] == 'K':
+            new_lis.append(float(0.13))
+        elif character[0] == 'Q':
+            new_lis.append(float(0.12))
+        elif character[0] == 'J':
+            new_lis.append(float(0.11))
+        elif character[0] == 'T':
+            new_lis.append(float(0.10))
+        else:
+            new_lis.append(float(character[0])/float(100))
+    sor_lis = sorted(sort(new_lis))
     for i in sor_lis:
         if sor_lis.count(i) == 2:
-            new.append(i)
-    if len(new) == 0:
+            new_lis.append(i)
+    if len(new_lis) == 0:
         return False
     else:
-        maximum = max(new)
-    return maximum
+        maximum = max(new_lis)
+    return maximum + 1
 
 def is_twopair(hand):
     '''
@@ -144,17 +160,17 @@ def is_highcard(hand):
     new_lis = []
     for character in hand:
         if character[0] == 'A':
-            new_lis.append(float(1.4))
+            new_lis.append(float(0.14))
         elif character[0] == 'K':
-            new_lis.append(float(1.3))
+            new_lis.append(float(0.13))
         elif character[0] == 'Q':
-            new_lis.append(float(1.2))
+            new_lis.append(float(0.12))
         elif character[0] == 'J':
-            new_lis.append(float(1.1))
+            new_lis.append(float(0.11))
         elif character[0] == 'T':
-            new_lis.append(float(1.0))
+            new_lis.append(float(0.10))
         else:
-            new_lis.append(float(character[0])/float(10))
+            new_lis.append(float(character[0])/float(100))
     return max(new_lis)
 
 def hand_rank(hand):
