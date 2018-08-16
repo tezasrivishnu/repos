@@ -147,7 +147,7 @@ def is_fullhouse(hand):
     i = 0
     sor_lis = sorted(sort(hand))
     # for i in range(len(sor_lis)):
-    new =[]
+    new = []
     if sor_lis[i] == sor_lis[i+1] == sor_lis[i+2] and sor_lis[i+3] == sor_lis[i+4]:
         # count += 1
         new.append(sor_lis[i])
