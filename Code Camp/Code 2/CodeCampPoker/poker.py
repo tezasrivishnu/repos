@@ -156,8 +156,7 @@ def is_fullhouse(hand):
         new.append(sor_lis[i+2])
     if len(new) == 0:
         return False
-    else:
-        maximum = max(new)/100
+    maximum = max(new)/100
     return maximum+7
 
 def is_highcard(hand):
