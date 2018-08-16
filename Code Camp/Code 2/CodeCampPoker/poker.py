@@ -102,11 +102,13 @@ def is_onepair(hand):
     '''
     if face values of one pair of cards in a hand is equal then hand is daid to be one pair
     '''
+    new = []
     sor_lis = sorted(sort(hand))
-    set_list = set(sor_lis)
-    if len(sor_lis) - len(set_list) == 1:
-        return True
-    return False
+    for i in sor_lis:
+        if sor_lis.count(i) == 2:
+            new.append(i)
+    maximum = max(set(new))
+    return maximum
 
 def is_twopair(hand):
     '''
@@ -163,7 +165,7 @@ def hand_rank(hand):
     if is_threeofakind(hand):
         return 3
     if is_onepair(hand):
-        return 1
+        return is_onepair(hand)
     if is_twopair(hand):
         return 2
     if is_fullhouse(hand):
