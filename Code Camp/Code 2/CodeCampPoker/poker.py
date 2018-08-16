@@ -134,9 +134,9 @@ def is_fullhouse(hand):
         return True
     return False
 
-def is_highcard(hand):
-    sor_lis = sorted(sort(hand))
-    return max(sor_lis)
+# def is_highcard(hand):
+#     sor_lis = sorted(sort(hand))
+#     return max(sor_lis)
     
 
 def hand_rank(hand):
