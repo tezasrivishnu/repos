@@ -1,9 +1,9 @@
-import re
-import math
-FILE_NAME = "stopwords.txt"
 '''
     Document Distance - A detailed description is given in the PDF
 '''
+import re
+import math
+FILE_NAME = "stopwords.txt"
 def similarity(dict1, dict2):
     '''
         Compute the document distance as given in the PDF
