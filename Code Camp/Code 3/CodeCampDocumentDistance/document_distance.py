@@ -32,8 +32,7 @@ def similarity(dict1, dict2):
         lis2.append(re.sub('[^a-zA-Z]', '', word.strip()))
     temp2 = lis2[:]
     for word in temp2:
-        if word in load_stopwords(FILE_NAME)
-    :
+        if word in load_stopwords(FILE_NAME):
             lis2.remove(word)
     for word in lis2:
         if len(word) == 0:
