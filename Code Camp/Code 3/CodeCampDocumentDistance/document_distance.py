@@ -61,7 +61,6 @@ def similarity(dict1, dict2):
     
 
     key = set(list(dic_t2.keys()) + list(dic_t1.keys()))
-    print(key)
     dic_t3 = {}
     for keys in key:
         dic_t3[keys] = [0,0]
@@ -69,7 +68,6 @@ def similarity(dict1, dict2):
         dic_t3[key][0] = dic_t1[key]
     for key in dic_t2:
         dic_t3[key][1] = dic_t2[key]
-    print(dic_t3)
     s = 0
     for key in dic_t3.keys():
         s += dic_t3[key][0]*dic_t3[key][1]
