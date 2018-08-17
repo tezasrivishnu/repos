@@ -63,7 +63,7 @@ def similarity(dict1, dict2):
     denominator = math.sqrt(dem1)*math.sqrt(dem2)
     similar = numerator/denominator
     return similar
-def load_stopwords(FILE_NAME):
+def load_stopwords(file_name):
     '''
         loads stop words from a file and returns a dictionary
     '''
