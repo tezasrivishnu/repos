@@ -1,6 +1,6 @@
 import re
 import math
-filename = "C:/Users/itsvi/Desktop/MSIT/IT/CCSP 1/repo/Code Camp/Code 3/CodeCampDocumentDistance/stopwords.txt"
+FILE_NAME = "C:/Users/itsvi/Desktop/MSIT/IT/CCSP 1/repo/Code Camp/Code 3/CodeCampDocumentDistance/stopwords.txt"
 '''
     Document Distance - A detailed description is given in the PDF
 '''
@@ -14,7 +14,7 @@ def similarity(dict1, dict2):
         lis1.append(re.sub('[^a-zA-Z]', '', word.strip()))
     temp1 = lis1[:]
     for word in temp1:
-        if word in load_stopwords(filename):
+        if word in load_stopwords(FILE_NAME):
             lis1.remove(word)
     for word in lis1:
         if len(word) == 0:
@@ -32,7 +32,8 @@ def similarity(dict1, dict2):
         lis2.append(re.sub('[^a-zA-Z]', '', word.strip()))
     temp2 = lis2[:]
     for word in temp2:
-        if word in load_stopwords(filename):
+        if word in load_stopwords(FILE_NAME)
+    :
             lis2.remove(word)
     for word in lis2:
         if len(word) == 0:
@@ -47,7 +48,7 @@ def similarity(dict1, dict2):
     key = set(list(dic_t2.keys()) + list(dic_t1.keys()))
     dic_t3 = {}
     for keys in key:
-        dic_t3[keys] = [0,0]
+        dic_t3[keys] = [0, 0]
     for key in dic_t1:
         dic_t3[key][0] = dic_t1[key]
     for key in dic_t2:
@@ -61,15 +62,18 @@ def similarity(dict1, dict2):
         dem1 += dic_t3[key][0]**2
         dem2 += dic_t3[key][1]**2
     denominator = math.sqrt(dem1)*math.sqrt(dem2)
-    similarity = numerator/denominator
-    return similarity
-def load_stopwords(filename):
+    similar = numerator/denominator
+    return similar
+def load_stopwords(FILE_NAME):
     '''
         loads stop words from a file and returns a dictionary
     '''
     stopwords = {}
-    with open(filename, 'r') as filename:
-        for line in filename:
+    with open(FILE_NAME,
+ 'r') as FILE_NAME:
+
+        for line in FILE_NAME:
+
             stopwords[line.strip()] = 0
     return stopwords
 
