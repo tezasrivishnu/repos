@@ -53,11 +53,11 @@ def similarity(dict1, dict2):
     for key in dic_t2:
         dic_t3[key][1] = dic_t2[key]
     numerator = 0
-    for key in dic_t3.keys():
+    for key in dic_t3:
         numerator += dic_t3[key][0]*dic_t3[key][1]
     dem1 = 0
     dem2 = 0
-    for key in dic_t3.keys():
+    for key in dic_t3:
         dem1 += dic_t3[key][0]**2
         dem2 += dic_t3[key][1]**2
     denominator = math.sqrt(dem1)*math.sqrt(dem2)
