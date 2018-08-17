@@ -1,6 +1,6 @@
 import re
 import math
-FILE_NAME = "C:/Users/itsvi/Desktop/MSIT/IT/CCSP 1/repo/Code Camp/Code 3/CodeCampDocumentDistance/stopwords.txt"
+FILE_NAME = "stopwords.txt"
 '''
     Document Distance - A detailed description is given in the PDF
 '''
