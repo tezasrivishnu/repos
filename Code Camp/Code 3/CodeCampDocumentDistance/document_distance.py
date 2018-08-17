@@ -17,7 +17,7 @@ def similarity(dict1, dict2):
         if word in load_stopwords(FILE_NAME):
             lis1.remove(word)
     for word in lis1:
-        if len(word) <= 0:
+        if not word:
             lis1.remove(word)
     dic_t1 = {}
     for word in lis1:
@@ -35,7 +35,7 @@ def similarity(dict1, dict2):
         if word in load_stopwords(FILE_NAME):
             lis2.remove(word)
     for word in lis2:
-        if len(word) <= 0:
+        if not word:
             lis2.remove(word)
     dic_t2 = {}
     for word in lis2:
