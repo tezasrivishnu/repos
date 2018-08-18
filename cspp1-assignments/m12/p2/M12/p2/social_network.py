@@ -3,6 +3,7 @@
     There are 3 functions below that have to be completed
     Note: PyLint score need not be 10/10 for this assignment. We expect 9.5/10
 '''
+
 def follow(network, arg1, arg2):
     '''
         3 arguments are passed to this function
@@ -12,20 +13,13 @@ def follow(network, arg1, arg2):
         so, this should result in adding arg2 to the followers list of arg1
         update the network dictionary and return it
     '''
-    '''
-    :params input---> a dict and two strings
-    :returns a dict
-    '''
-    network_copy = network.copy()
-    # for line in arg2:
-    #     # key_split,val_split = line.split('follow')
-    #     key_s, value_s = arg2.split()
-    if arg1 in network_copy.keys():
-        if arg2 not in network_copy[arg1]:
-            network_copy[arg1].append(arg2)
+    # remove the pass below and start writing your code
+    if arg1 in network and arg2 in network:
+        network[arg1].append(arg2)
     else:
-        network_copy[arg1] = [arg2]
-    return network_copy
+        network[arg1] = [arg2]
+    return network
+
 def unfollow(network, arg1, arg2):
     '''
         3 arguments are passed to this function
@@ -35,16 +29,12 @@ def unfollow(network, arg1, arg2):
         so, this should result in removing arg2 from the followers list of arg1
         update the network dictionary and return it
     '''
-    '''
-    :params input---> a dict and two strings
-    :returns a dict
-    '''
-    network_copy = network.copy()
-    # map(lambda arg1: arg1.pop(arg2), network_copy)
-    if arg1 in network_copy:
-        if arg2 in network_copy[arg1]:
-            network_copy[arg1].remove(arg2)
-    return network_copy
+    # remove the pass below and start writing your code
+    if arg1 in network:
+        if arg2 in network[arg1]:
+            network[arg1].remove(arg2)
+    return network
+
 def delete_person(network, arg1):
     '''
         2 arguments are passed to this function
@@ -55,17 +45,14 @@ def delete_person(network, arg1):
         also, before deleting arg1, remove arg1 from the everyone's followers list
         update the network dictionary and return it
     '''
-    '''
-    :params input--->a dict and a string
-    :returns a dict
-    '''
-    network_copy = network.copy()
-    # for line in arg1:
-    #     key_split = line.split('delete')
-        # key_split = key_split.strip()
-        # key_s = key_split
-    del network_copy[arg1]
-    return network_copy
+    # remove the pass below and start writing your code
+    if arg1 in network:
+        for person in network:
+            if arg1 in network[person]:
+                network[person].remove(arg1)
+        del network[arg1]
+
+    return network
 def main():
     '''
         handling testcase input and printing output
@@ -83,5 +70,6 @@ def main():
         elif output[0] == "delete":
             network = delete_person(network, output[1])
     print(network)
+
 if __name__ == "__main__":
     main()
