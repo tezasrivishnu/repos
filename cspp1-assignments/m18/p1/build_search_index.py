@@ -113,14 +113,11 @@ def main():
     for index in update:
         for word in index:
             update1.append(word.lower().split())
-    print(update1)
-
     update1_copy = update1[:]
     for index in update1_copy:
         for word in index:
             if word in load_stopwords(filename):
                 index.remove(word)
-    print(update1_copy)
     dic ={}
     i = 0
     for index in update1_copy:
