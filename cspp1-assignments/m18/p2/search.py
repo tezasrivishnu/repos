@@ -53,7 +53,7 @@ def process_queries(search_index, queries):
     '''
     dic = []
     lis_values = []
-    for line in query:
+    for line in queries:
         dic = search(search_index, line)
         for index in dic:
             for word in range(len(index)):
