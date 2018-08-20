@@ -45,6 +45,7 @@ def process_queries(search_index, queries):
         iterate through all the queries and call the search function
         print the results returned by search function
     '''
+
     
 
 def main():
@@ -62,6 +63,7 @@ def main():
     for i in range(lines):
         queries.append(input())
         i += 1
+    print(queries)
 
     # call process queries
     process_queries(search_index, queries)
