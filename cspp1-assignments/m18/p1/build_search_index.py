@@ -105,22 +105,31 @@ def main():
     for index in documents:
         update.append(index.split(','))
     # update_c = []
+    # i = 0
     # for index in update:
     #     for word in index:
-    #         update_c[index][word].append(re.sub('[^ a-zA-z]', '', word.strip()))
+    #         update_c[i].append(re.sub('[^ a-zA-z]', '', word.strip()))
+    #     i += 1
     # print(update_c)
     update1 = []
+    i = 0
     for index in update:
         for word in index:
-            update1.append(word.lower().split())
+            update1[i].append(word.lower().split())
+        i += 1
     update1_copy = update1[:]
-    for index in update1_copy:
-        for word in index:
-            if word in load_stopwords(filename):
-                index.remove(word)
-    dic ={}
     i = 0
     for index in update1_copy:
+        print(index)
+        for word in index:
+            print(word)
+            if word in load_stopwords(filename):
+                update1[i].remove(word)
+        print(update1[i])
+        i += 1
+    dic ={}
+    i = 0
+    for index in update1:
         for word in index:
             count = 0
             for char in index:
