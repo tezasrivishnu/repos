@@ -57,7 +57,7 @@ def process_queries(search_index, queries):
         dic = search(search_index, line)
         for index in dic:
             for word in range(len(index)):
-                lis_values.append(word[0])
+                lis_values.append(index[word][0])
     print(lis_values)
 
 def main():
