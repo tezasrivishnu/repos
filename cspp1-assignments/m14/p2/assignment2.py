@@ -126,14 +126,33 @@ class Message(object):
                 new_msg.append(self.build_shift_dict(shift)[i])
         return ''.join(new_msg)
 
-### Helper code End
+class PlaintextMessage(Message):
+    def __init__(self, text, shift):
+        self.shift = shift
+        self.message_text = text
+        Message.__init__(self, text)
+        self.valid_words = load_words(WORDLIST_FILENAME)
+        self.encrypting_dict = self.build_shift_dict(shift)
+        self.message_text_encrypted = self.apply_shift(shift)
 
+    def get_shift(self):
+        
+        return self.shift
 
+    def get_encrypting_dict(self):
+        
+        encrypting_dict_copy = self.encrypting_dict.copy()
+        return encrypting_dict_copy
 
-### Paste your implementation of the `PlaintextMessage` class here
+    def get_message_text_encrypted(self):
+        
+        return self.message_text_encrypted
 
-
-
+    def change_shift(self, shift):
+        
+        self.shift = shift
+        self.encrypting_dict = self.build_shift_dict(shift)
+        self.message_text_encrypted = self.apply_shift(shift)
 def main():
     ''' Function to handle testcases '''
     inp = input()
