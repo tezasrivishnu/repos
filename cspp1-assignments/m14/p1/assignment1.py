@@ -113,7 +113,7 @@ class Message(object):
 
         lower_key = list(string.ascii_lowercase)
         lower_value = list(string.ascii_lowercase)
-        shift_lower_value = lower_value[shift:] + shift_lower_value[:shift]
+        shift_lower_value = lower_value[shift:] + lower_value[:shift]
         
         upper_key = list(string.ascii_uppercase)                 
         upper_value = list(string.ascii_uppercase)
