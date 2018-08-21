@@ -130,7 +130,7 @@ class PlaintextMessage(Message):
     def __init__(self, text, shift):
         self.shift = shift
         self.message_text = text
-        
+        Message.__init__(self, text)
         self.valid_words = load_words(WORDLIST_FILENAME)
         self.encrypting_dict = self.build_shift_dict(shift)
         self.message_text_encrypted = self.apply_shift(shift)
