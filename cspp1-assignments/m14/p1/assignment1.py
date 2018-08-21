@@ -57,6 +57,9 @@ def load_words(file_name):
 WORDLIST_FILENAME = 'words.txt'
 # Helper code End
 class Message(object):
+    '''
+    initilize the class
+    '''
     def __init__(self, text):
         '''
         Initializes a Message object
