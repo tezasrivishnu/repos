@@ -1,4 +1,3 @@
-import string
 '''
 Problem 1 - Build the Shift Dictionary and Apply Shift
 # The Message class contains methods that could be used to apply a
@@ -36,6 +35,7 @@ Problem 1 - Build the Shift Dictionary and Apply Shift
 # Remember that spaces and punctuation should not be changed by the cipher.
 # Helper code
 '''
+import string
 def load_words(file_name):
     '''
     file_name (string): the name of the file containing
@@ -86,7 +86,7 @@ class Message(object):
         character shifted down the alphabet by the input shift. The dictionary
         should have 52 keys of all the uppercase letters and all the lowercase
         letters only.
-        shift (integer): the amount by which to shift every letter of the 
+        shift (integer): the amount by which to shift every letter of the
         alphabet. 0 <= shift < 26
         Returns: a dictionary mapping a letter (string) to
                  another letter (string).
@@ -94,7 +94,7 @@ class Message(object):
         lower_key = list(string.ascii_lowercase)
         lower_value = list(string.ascii_lowercase)
         shift_lower_value = lower_value[shift:] + lower_value[:shift]
-        upper_key = list(string.ascii_uppercase)                 
+        upper_key = list(string.ascii_uppercase)
         upper_value = list(string.ascii_uppercase)
         shift_upper_value = upper_value[shift:] + upper_value[:shift]
         full_key = lower_key + upper_key
