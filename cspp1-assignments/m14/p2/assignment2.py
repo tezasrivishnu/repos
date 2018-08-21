@@ -151,7 +151,6 @@ class PlaintextMessage(Message):
     def change_shift(self, shift):
         
         self.shift = shift
-        Message.__init__(self, text)
         self.encrypting_dict = self.build_shift_dict(shift)
         self.message_text_encrypted = self.apply_shift(shift)
 def main():
