@@ -88,7 +88,7 @@ class Message(object):
         FK = LK + UK
         FV = shift_LV + shift_UV
 
-        self.shift_dict = {FK, FV}
+        self.shift_dict = dict(zip(FK, FV))
         return self.shift_dict
 
     def apply_shift(self, shift):
