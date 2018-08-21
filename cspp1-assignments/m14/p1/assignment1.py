@@ -69,7 +69,7 @@ WORDLIST_FILENAME = 'words.txt'
 class Message(object):
     def __init__(self, text):
         '''
-        Initializes a Message object      
+        Initializes a Message object
         text (string): the message's text
         a Message object has two attributes:
             self.message_text (string, determined by input text)
@@ -97,11 +97,11 @@ class Message(object):
         The dictionary maps every uppercase and lowercase letter to a
         character shifted down the alphabet by the input shift. The dictionary
         should have 52 keys of all the uppercase letters and all the lowercase
-        letters only.        
+        letters only.
         shift (integer): the amount by which to shift every letter of the 
         alphabet. 0 <= shift < 26
-        Returns: a dictionary mapping a letter (string) to 
-                 another letter (string). 
+        Returns: a dictionary mapping a letter (string) to
+                 another letter (string).
         '''
         lower_key = list(string.ascii_lowercase)
         lower_value = list(string.ascii_lowercase)
@@ -117,7 +117,7 @@ class Message(object):
         '''
         Applies the Caesar Cipher to self.message_text with the input shift.
         Creates a new string that is self.message_text shifted down the
-        alphabet by some number of characters determined by the input shift        
+        alphabet by some number of characters determined by the input shift
         shift (integer): the shift with which to encrypt the message.
         0 <= shift < 26
         Returns: the message text (string) in which every character is shifted
