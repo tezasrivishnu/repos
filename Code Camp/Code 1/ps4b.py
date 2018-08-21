@@ -124,7 +124,28 @@ def playGame(wordList):
 
     wordList: list (string)
     """
-    
+    hand = None
+    inp = input("Enter n for new, r to replay, e to end: ")
+    while inp != "e":
+        if inp == "n":
+            hand = dealHand(HAND_SIZE)
+        elif inp == "r":
+            if hand == None:
+                print("You have not played a hand yet")
+                inp = input("Enter n for new, r to replay, e to end: ")
+        else:
+            print ("Invalid")
+            inp = input("Enter n for new, r to replay, e to end: ")
+        user_comp = input("Enter u to user play, c for computer: ")
+        while user_comp != "u" and user_comp != "c":
+            print("Invalid")
+            user_comp = input("Enter u to user play, c for computer: ")
+        if user_comp == "u":
+            playHand(hand, wordList, HAND_SIZE)
+        elif user_comp == "c":
+            compPlayHand(hand, wordList, HAND_SIZE)
+        inp = input("Enter n for new, r to replay, e to end: ")
+           
 
         
 #
