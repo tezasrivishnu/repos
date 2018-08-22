@@ -1,3 +1,4 @@
+import re
 '''
     Tiny Search Engine - Part 1 - Build a search index
 
@@ -33,12 +34,25 @@ def load_stopwords(filename):
     return stopwords
 
 
-# def word_list(text):
-#     '''
-#         Change case to lower and split the words using a SPACE
-#         Clean up the text by remvoing all the non alphabet characters
-#         return a list of words
-#     '''
+def word_list(text):
+    '''
+        Change case to lower and split the words using a SPACE
+        Clean up the text by remvoing all the non alphabet characters
+        return a list of words
+    '''
+    list_ = []
+    characters = "@#$^&:/?><.,';"
+    for var in characters:
+        if var in text:
+            text = text.replace(var, '')
+
+
+    list_1 = text.lower().split()
+    list_ = list(list_1)
+    for word in list_:
+        if word in load_stopwords(filename):
+            list_1.remove(word)
+    return list_1
 
 #     word_lis = text.copy()
 #     update_lis = []
@@ -53,26 +67,38 @@ def load_stopwords(filename):
 #         word_dict[word_dict] = [(doc_id, count)]
 #     return word_dict
 
-# def build_search_index(docs):
-#     '''
-#         Process the docs step by step as given below
-#     '''
+def build_search_index(docs):
+    '''
+        Process the docs step by step as given below
+    '''
 
-#     # initialize a search index (an empty dictionary)
+    # initialize a search index (an empty dictionary)
 
-#     # iterate through all the docs
-#     # keep track of doc_id which is the list index corresponding the document
-#     # hint: use enumerate to obtain the list index in the for loop
+    # iterate through all the docs
+    # keep track of doc_id which is the list index corresponding the document
+    # hint: use enumerate to obtain the list index in the for loop
 
-#         # clean up doc and tokenize to words list
+        # clean up doc and tokenize to words list
 
-#         # add or update the words of the doc to the search index
+        # add or update the words of the doc to the search index
 
-#     # return search index
-#     doc_copy = docs[:]
-#     dic = {}
-#     for index in doc_copy:
-#         word_list
+    # return search index
+
+    dict_ = {}
+    #print(docs)
+    for lines in range(len(docs)):
+        update_dict = word_list(docs[lines])
+        for word in update_dict:
+            if word not in dict_.keys():
+                dict_[word] = [(lines, update_dict.count(word))]
+            else:
+                if (lines, update_dict.count(word)) not in dict_[word]:
+                    dict_[word].append((lines, update_dict.count(word)))
+    return dict_
+    #     doc_copy = docs[:]
+    #     dic = {}
+    #     for index in doc_copy:
+    #         word_list
 
     
     
@@ -101,9 +127,10 @@ def main():
     for i in range(lines):
         documents.append(input())
         i += 1
-    update = []
-    for index in documents:
-        update.append(index.split(','))
+    print_search_index(build_search_index(documents))
+    # update = []
+    # for index in documents:
+    #     update.append(index.split(','))
     # update_c = []
     # i = 0
     # for index in update:
@@ -111,36 +138,36 @@ def main():
     #         update_c[i].append(re.sub('[^ a-zA-z]', '', word.strip()))
     #     i += 1
     # print(update_c)
-    update1 = []
-    i = 0
-    for index in update:
-        for word in index:
-            update1[i].append(word.lower().split())
-        i += 1
-    update1_copy = update1[:]
-    i = 0
-    for index in update1_copy:
-        print(index)
-        for word in index:
-            print(word)
-            if word in load_stopwords(filename):
-                update1[i].remove(word)
-        print(update1[i])
-        i += 1
-    dic ={}
-    i = 0
-    for index in update1:
-        for word in index:
-            count = 0
-            for char in index:
-                if word == char:
-                    count += 1
-            if word in dic.keys():
-                dic[word].append((i, count))
-            else:
-                dic[word] = [(i, count)]
-        i += 1 
-    print_search_index(dic)
+    # update1 = []
+    # i = 0
+    # for index in update:
+    #     for word in index:
+    #         update1[i].append(word.lower().split())
+    #     i += 1
+    # update1_copy = update1[:]
+    # i = 0
+    # for index in update1_copy:
+    #     print(index)
+    #     for word in index:
+    #         print(word)
+    #         if word in load_stopwords(filename):
+    #             update1[i].remove(word)
+    #     print(update1[i])
+    #     i += 1
+    # dic ={}
+    # i = 0
+    # for index in update1:
+    #     for word in index:
+    #         count = 0
+    #         for char in index:
+    #             if word == char:
+    #                 count += 1
+    #         if word in dic.keys():
+    #             dic[word].append((i, count))
+    #         else:
+    #             dic[word] = [(i, count)]
+    #     i += 1 
+    # print_search_index(dic)
 
 if __name__ == '__main__':
     main()
