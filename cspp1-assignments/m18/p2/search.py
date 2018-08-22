@@ -51,7 +51,6 @@ def process_queries(search_index, queries):
         iterate through all the queries and call the search function
         print the results returned by search function
     '''
-    dic = []
     lis_values = []
     for line in queries:
         lis_values = []

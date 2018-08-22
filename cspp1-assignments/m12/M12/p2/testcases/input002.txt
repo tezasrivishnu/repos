@@ -1,5 +1,0 @@
-{'a': ['b', 'c', 'd'], 'b': ['c', 'd'], 'd': ['a']}
-3
-delete a
-delete b
-delete c

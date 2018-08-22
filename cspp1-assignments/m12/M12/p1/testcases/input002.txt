@@ -1,4 +1,0 @@
-3
-a follows b,c,d
-b follows c,d
-d follows a
