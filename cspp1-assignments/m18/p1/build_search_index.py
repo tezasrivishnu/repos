@@ -1,4 +1,3 @@
-import re
 '''
     Tiny Search Engine - Part 1 - Build a search index
 
@@ -21,14 +20,14 @@ import re
         .
     }
 '''
-filename = "stopwords.txt"
+file_name = "stopwords.txt"
 # helper function to load the stop words from a file
-def load_stopwords(filename):
+def load_stopwords(file_name):
     '''
         loads stop words from a file and returns a dictionary
     '''
     stopwords = {}
-    with open(filename, 'r') as f_stopwords:
+    with open(file_name, 'r') as f_stopwords:
         for line in f_stopwords:
             stopwords[line.strip()] = 0
     return stopwords
@@ -50,7 +49,7 @@ def word_list(text):
     list_1 = text.lower().split()
     list_ = list(list_1)
     for word in list_:
-        if word in load_stopwords(filename):
+        if word in load_stopwords(file_name):
             list_1.remove(word)
     return list_1
 
@@ -99,11 +98,6 @@ def build_search_index(docs):
     #     dic = {}
     #     for index in doc_copy:
     #         word_list
-
-    
-    
-
-
 # # helper function to print the search index
 # # use this to verify how the search index looks
 def print_search_index(index):
@@ -150,7 +144,7 @@ def main():
     #     print(index)
     #     for word in index:
     #         print(word)
-    #         if word in load_stopwords(filename):
+    #         if word in load_stopwords(file_name):
     #             update1[i].remove(word)
     #     print(update1[i])
     #     i += 1
