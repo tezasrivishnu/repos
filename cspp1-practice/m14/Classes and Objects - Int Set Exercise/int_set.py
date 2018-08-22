@@ -27,7 +27,7 @@ class intSet(object):
         try:
             self.vals.remove(e)
         except:
-            raise ValueError(str(e) + ' not found')
+            raise ValueError(str(e) + ' not present')
 
     def __str__(self):
         """Returns a string representation of self"""
@@ -72,7 +72,7 @@ def main():
         setA.insert(int(i))
     for j in l2:
         setB.insert(int(j))
-    print setA.intersect(setB)
+    print(setA.intersect(setB))
 
 if __name__== "__main__":
     main()
