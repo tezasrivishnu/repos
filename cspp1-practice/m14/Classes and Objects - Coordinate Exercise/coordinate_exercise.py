@@ -27,7 +27,7 @@ class Coordinate(object):
             return False
 
     def __repr__(self):
-        return str((self.x, self.y))
+        return "Coordinate: "+str((self.x, self.y))
 
 
 # Your task is to define the following two methods for the Coordinate class:
