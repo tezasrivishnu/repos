@@ -1,17 +1,15 @@
 #define the gen_primes function here
 def genPrimes():
-    prime = [2]
-    temp = 3
-    while True:
-        for num in prime:
-            count = 0
-            if temp%num != 0:
-                count += 1
-            if count == len(prime):
-                prime.append(temp)
-            if temp == prime[-1]:
-                yield prime[-1]
-        temp += 2
+    prime = 2
+    while prime>0:
+    	if prime(prime):
+    		yield prime
+    	prime += 1
+def prime():
+	for num in range(2,n):
+		if n/num == 0:
+			return False
+	return True
 def main():
     data=input()
     l=data.split()

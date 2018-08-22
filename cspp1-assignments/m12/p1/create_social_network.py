@@ -1,3 +1,4 @@
+import re
 '''
     Assignment-1 Create Social Network
 '''
@@ -37,6 +38,8 @@ def create_social_network(data):
     '''
     result_dict = {}
     line = data.splitlines()
+    if len(line) == 1:
+        return result_dict
     for eachline in line:
         key_split, val_split = eachline.split(' follows ')
         # key_split = key_split.strip()
