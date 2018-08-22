@@ -17,7 +17,7 @@ class Accio(Spell):
     def __init__(self):
         Spell.__init__(self, 'Accio', 'Summoning Charm')
     def __str__(self):
-        return self.name + ' ' + self.incantation
+        return self.name + '  ' + self.incantation
 
 class Confundo(Spell):
     def __init__(self):
