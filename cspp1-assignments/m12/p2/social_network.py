@@ -67,7 +67,7 @@ def delete_person(network, arg1):
     if arg1 in network_copy.keys():
         for char in network_copy:
             if arg1 in network_copy[char]:
-                network_copy[char].remove(arg1) 
+                network_copy[char].remove(arg1)
         del network_copy[arg1]
     return network_copy
 def main():
