@@ -160,7 +160,7 @@ def main():
     #             dic[word].append((i, count))
     #         else:
     #             dic[word] = [(i, count)]
-    #     i += 1 
+    #     i += 1
     # print_search_index(dic)
 
 if __name__ == '__main__':
