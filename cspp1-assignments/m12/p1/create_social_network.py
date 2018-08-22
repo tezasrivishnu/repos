@@ -1,8 +1,6 @@
-import re
 '''
     Assignment-1 Create Social Network
 '''
-
 def create_social_network(data):
     '''
         The data argument passed to the function is a string
