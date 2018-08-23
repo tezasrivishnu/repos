@@ -62,7 +62,7 @@ def read_matrix():
     row, columns = input().split(',')
     for _ in range(int(row)):
         z_split = list(map(int, input().split()))
-        assert len(row) == int(columns)
+        assert len(z_split) == int(columns)
         matrix.append(z_split)
     return matrix
 
