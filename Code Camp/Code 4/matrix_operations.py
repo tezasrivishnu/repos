@@ -9,20 +9,22 @@ def mult_matrix(m_1, m_2):
         and return None
         error message should be "Error: Matrix shapes invalid for mult"
     '''
-    if len(m_1) != len(m_2[0]):
+    len_1 = len(m_1)
+    len_2 = len(m_2)
+    len_20 = len(m_2[0])
+    if len_1 != len_20:
         print("Error: Matrix shapes invalid for mult")
-        return
     else:
         mul_matrix = []
-        for _ in range(len(m_1)):
+        for _ in range(len_1):
             tem_matrix = []
-            for _ in range(len(m_2[0])):
+            for _ in range(len_20):
             #for z in range(len(b)):
                 tem_matrix.append(0)
             mul_matrix.append(tem_matrix)
-        for row_x in range(len(m_1)):
-            for column_y in range(len(m_2[0])):
-                for row_y in range(len(m_2)):
+        for row_x in range(len_1):
+            for column_y in range(len_20):
+                for row_y in range(len_2):
                     # print(row_x, column_y)
                     # print(row_x, row_y)
                     # print(row_y, column_y)
@@ -37,19 +39,21 @@ def add_matrix(m_1, m_2):
         and return None
         error message should be "Error: Matrix shapes invalid for addition"
     '''
-    if len(m_1) != len(m_2):
+    len_1 = len(m_1)
+    len_2 = len(m_2)
+    len_20 = len(m_2[0])
+    if len_1 != len_2:
         print("Error: Matrix shapes invalid for addition")
-        return
     else:
         addition_matrix = []
-        for _ in range(len(m_1)):
+        for _ in range(len_1):
             temp_matrix = []
-            for _ in range(len(m_2[0])):
+            for _ in range(len_20):
             #for z in range(len(b)):
                 temp_matrix.append(0)
             addition_matrix.append(temp_matrix)
-        for row in range(len(m_1)):
-            for column in range(len(m_2[0])):
+        for row in range(len_1):
+            for column in range(len_20):
                 addition_matrix[row][column] += m_1[row][column] + m_2[row][column]
         return addition_matrix
 def read_matrix():
