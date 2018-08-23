@@ -59,9 +59,10 @@ def read_matrix():
         error message should be "Error: Invalid input for the matrix"
     '''
     matrix = []
-    row, _ = input().split(',')
+    row, columns = input().split(',')
     for _ in range(int(row)):
         z_split = list(map(int, input().split()))
+        assert len(row) == int(columns)
         matrix.append(z_split)
     return matrix
 
@@ -70,10 +71,14 @@ def main():
     '''
     intializing
     '''
-    first_matrix = read_matrix()
-    second_matrix = read_matrix()
-    print(add_matrix(first_matrix, second_matrix))
-    print(mult_matrix(first_matrix, second_matrix))
+    try:
+        first_matrix = read_matrix()
+        second_matrix = read_matrix()
+    except IOError:
+        print("Error: Invalid input for the matrix")
+    else:
+        print(add_matrix(first_matrix, second_matrix))
+        print(mult_matrix(first_matrix, second_matrix))
 
 if __name__ == '__main__':
     main()
