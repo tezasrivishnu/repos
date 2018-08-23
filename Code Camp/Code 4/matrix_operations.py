@@ -74,7 +74,7 @@ def main():
     try:
         first_matrix = read_matrix()
         second_matrix = read_matrix()
-    except IOError:
+    except AssertionError:
         print("Error: Invalid input for the matrix")
     else:
         print(add_matrix(first_matrix, second_matrix))
