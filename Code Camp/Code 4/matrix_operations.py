@@ -6,7 +6,25 @@ def mult_matrix(m1, m2):
         and return None
         error message should be "Error: Matrix shapes invalid for mult"
     '''
-    pass
+    
+    if len(m1) != len(m2[0]):
+        print("Error: Matrix shapes invalid for mult")
+    else:
+        mul_matrix = []
+        for i in range(len(m1)):
+            tem_matrix = []
+            for j in range(len(m2[0])):
+            #for z in range(len(b)):
+                tem_matrix.append(0)
+            mul_matrix.append(tem_matrix)
+        for row_x in range(len(m1)):
+            for column_y in range(len(m2[0])):
+                for row_y in range(len(m2)):
+                    # print(row_x, column_y)
+                    # print(row_x, row_y)
+                    # print(row_y, column_y)
+                    mul_matrix[row_x][column_y] += m1[row_x][row_y] * m2[row_y][column_y]
+        return mult_matrix
 
 def add_matrix(m1, m2):
     '''
@@ -16,8 +34,21 @@ def add_matrix(m1, m2):
         and return None
         error message should be "Error: Matrix shapes invalid for addition"
     '''
-    pass
-
+    
+    if len(m1) != len(m2):
+        print("Error: Matrix shapes invalid for addition")
+    else:
+        addition_matrix = []
+        for i in range(len(m1)):
+            temp_matrix = []
+            for j in range(len(m2[0])):
+            #for z in range(len(b)):
+                temp_matrix.append(0)
+            addition_matrix.append(temp_matrix)
+        for row in range(len(m1)):
+            for column in range(len(m2[0])):
+                addition_matrix[row][column] += m1[row][column] + m2[row][column]
+        return addition_matrix 
 def read_matrix():
     '''
         read the matrix dimensions from input
@@ -26,17 +57,19 @@ def read_matrix():
         print an error message and return None
         error message should be "Error: Invalid input for the matrix"
     '''
-    pass
+    a = []
+    row, column = input().split(',')
+    for i in range(int(row)):
+        z = list(map(int, input().split()))
+        a.append(z)
+    return a
+
 
 def main():
-    # read matrix 1
-
-    # read matrix 2
-
-    # add matrix 1 and matrix 2
-
-    # multiply matrix 1 and matrix 2
-    pass
+    first_matrix = read_matrix()
+    second_matrix = read_matrix()  
+    print(add_matrix(first_matrix, second_matrix))
+    print(mult_matrix(first_matrix, second_matrix))
 
 if __name__ == '__main__':
     main()
