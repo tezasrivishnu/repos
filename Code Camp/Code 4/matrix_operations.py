@@ -61,8 +61,8 @@ def read_matrix():
     matrix = []
     row, _ = input().split(',')
     for _ in range(int(row)):
-        z_ = list(map(int, input().split()))
-        matrix.append(z_)
+        z_split = list(map(int, input().split()))
+        matrix.append(z_split)
     return matrix
 
 
