@@ -24,7 +24,7 @@ def mult_matrix(m1, m2):
                     # print(row_x, row_y)
                     # print(row_y, column_y)
                     mul_matrix[row_x][column_y] += m1[row_x][row_y] * m2[row_y][column_y]
-        return mult_matrix
+        return mul_matrix
 
 def add_matrix(m1, m2):
     '''
