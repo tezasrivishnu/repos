@@ -32,11 +32,11 @@ def mat(matrix):
     if count == 2:
         return 'invalid game'
     # else:
-    if temp == 1 and count == 1:
+    elif temp == 1 and count == 1:
         return 'x'
-    if temp == 2 and count == 1:
+    elif temp == 2 and count == 1:
         return 'o'
-    if temp == 0:
+    elif temp == 0:
         return 'draw'
 def main():
     '''
