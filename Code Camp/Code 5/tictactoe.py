@@ -26,7 +26,7 @@ def mat(matrix):
         or matrix[0][2] == matrix[1][1] == matrix[2][0] == "o"):
         temp = 2
         count += 1
-    if temp == 1 and temp == 2 and count == 2:
+    if count == 2:
         return 'invalid game'
     else:
         if temp == 1 and count == 1:
