@@ -1,4 +1,10 @@
+'''
+    finding who's is the winner
+'''
 def mat(matrix):
+    '''
+    checking the possibilities
+    '''
     temp = 0
     count = 0
     if (matrix[0][0] == matrix[1][0] == matrix[2][0] == "x"
@@ -20,24 +26,22 @@ def mat(matrix):
     if (matrix[0][0] == matrix[1][1] == matrix[2][2] == "x"
         or matrix[0][2] == matrix[1][1] == matrix[2][0] == "x"):
         temp = 1
-        count = 0
-        count += 1
     if (matrix[0][0] == matrix[1][1] == matrix[2][2] == "o"
         or matrix[0][2] == matrix[1][1] == matrix[2][0] == "o"):
         temp = 2
-        count += 1
     if count == 2:
         return 'invalid game'
-    else:
-        if temp == 1 and count == 1:
-            return 'x'
-        if temp == 2 and count == 1:
-            return 'o'
-        if temp == 0:
-            return 'draw'
-    
-
+    # else:
+    if temp == 1 and count == 1:
+        return 'x'
+    if temp == 2 and count == 1:
+        return 'o'
+    if temp == 0:
+        return 'draw'
 def main():
+    '''
+    giving input to a program
+    '''
     matrix = []
     flag = 0
     count_x = 0
@@ -61,4 +65,4 @@ def main():
     else:
         print(mat(matrix))
 if __name__ == '__main__':
-    main()       
+    main()
