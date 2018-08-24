@@ -22,11 +22,11 @@ def mat(matrix):
         temp = 2
     if temp == 1 and temp == 2:
         return 'invalid game'
-    elif temp == 1:
+    if temp == 1:
         return 'x'
-    elif temp == 2:
+    if temp == 2:
         return 'o'
-    elif temp == 0:
+    if temp == 0:
         return 'draw'
 
 def main():
