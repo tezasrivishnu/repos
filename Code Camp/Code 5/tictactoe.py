@@ -34,8 +34,7 @@ def mat(matrix):
             return 'x'
         if temp == 2:
             return 'o'
-        if temp == 0:
-            return 'draw'
+        return 'draw'
 def main():
     '''
     giving input to a program
