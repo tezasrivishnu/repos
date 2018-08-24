@@ -29,12 +29,11 @@ def mat(matrix):
         count += 1
     if count == 2:
         return 'invalid game'
-    else:
-        if temp == 1:
-            return 'x'
-        if temp == 2:
-            return 'o'
-        return 'draw'
+    if temp == 1:
+        return 'x'
+    if temp == 2:
+        return 'o'
+    return 'draw'
 def main():
     '''
     giving input to a program
