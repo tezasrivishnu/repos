@@ -7,7 +7,7 @@ def mat(matrix):
         or matrix[1][0] == matrix[1][1] == matrix[1][2] == "x"
         or matrix[2][0] == matrix[2][1] == matrix[2][2] == "x"):
         temp = 1
-    elif (matrix[0][0] == matrix[1][0] == matrix[2][0] == "o"
+    if (matrix[0][0] == matrix[1][0] == matrix[2][0] == "o"
         or matrix[0][1] == matrix[1][1] == matrix[2][1] == "o"
         or matrix[0][2] == matrix[1][2] == matrix[2][2] == "o"
         or matrix[0][0] == matrix[0][1] == matrix[0][2] == "o"
@@ -17,7 +17,7 @@ def mat(matrix):
     if (matrix[0][0] == matrix[1][1] == matrix[2][2] == "x"
         or matrix[0][2] == matrix[1][1] == matrix[2][0] == "x"):
         temp = 1
-    elif (matrix[0][0] == matrix[1][1] == matrix[2][2] == "o"
+    if (matrix[0][0] == matrix[1][1] == matrix[2][2] == "o"
         or matrix[0][2] == matrix[1][1] == matrix[2][0] == "o"):
         temp = 2
     if temp == 1 and temp == 2:
