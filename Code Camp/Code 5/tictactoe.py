@@ -20,32 +20,15 @@ def mat(matrix):
     elif (matrix[0][0] == matrix[1][1] == matrix[2][2] == "o"
         or matrix[0][2] == matrix[1][1] == matrix[2][0] == "o"):
         temp = 2
-    if (matrix[0][0] == matrix[1][0] == matrix[2][0] == "x"
-        or matrix[0][1] == matrix[1][1] == matrix[2][1] == "x"
-        or matrix[0][2] == matrix[1][2] == matrix[2][2] == "x"
-        or matrix[0][0] == matrix[0][1] == matrix[0][2] == "x"
-        or matrix[1][0] == matrix[1][1] == matrix[1][2] == "x"
-        or matrix[2][0] == matrix[2][1] == matrix[2][2] == "x") and
-        (matrix[0][0] == matrix[1][0] == matrix[2][0] == "o"
-        or matrix[0][1] == matrix[1][1] == matrix[2][1] == "o"
-        or matrix[0][2] == matrix[1][2] == matrix[2][2] == "o"
-        or matrix[0][0] == matrix[0][1] == matrix[0][2] == "o"
-        or matrix[1][0] == matrix[1][1] == matrix[1][2] == "o"
-        or matrix[2][0] == matrix[2][1] == matrix[2][2] == "o"):
-        temp = 3
-    elif (matrix[0][0] == matrix[1][1] == matrix[2][2] == "x"
-        or matrix[0][2] == matrix[1][1] == matrix[2][0] == "x") and
-        (matrix[0][0] == matrix[1][1] == matrix[2][2] == "o"
-        or matrix[0][2] == matrix[1][1] == matrix[2][0] == "o"):
-        temp = 3
-    if temp == 1:
+    if temp == 1 and temp == 2:
+        return 'invalid game'
+    elif temp == 1:
         return 'x'
     elif temp == 2:
         return 'o'
     elif temp == 0:
         return 'draw'
-    else:
-        return 'invalid game'
+
 def main():
     matrix = []
     flag = 0
