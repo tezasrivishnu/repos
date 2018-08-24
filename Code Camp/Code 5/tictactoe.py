@@ -40,9 +40,9 @@ def main():
                 flag = 1
             else:
                 flag = 0
-            if matrix[i][j] == 'x':
+            if matrix[i][j] == "x":
                 count_x += 1
-            else:
+            elif matrix[i][j] == "o"
                 count_o += 1
     if flag == 0 or count_x > 5 or count_o > 5:
         print("invalid input")
