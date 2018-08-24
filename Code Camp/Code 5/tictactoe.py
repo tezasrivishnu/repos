@@ -24,7 +24,7 @@ def mat(matrix):
         return 'x'
     elif temp == 2:
         return 'o'
-    elif if temp == 0:
+    elif temp == 0:
         return 'draw'
 
 def main():
