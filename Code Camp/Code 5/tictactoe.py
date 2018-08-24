@@ -25,7 +25,7 @@ def mat(matrix):
             or matrix[2][0] == matrix[2][1] == matrix[2][2] == "o"
             or matrix[0][0] == matrix[1][1] == matrix[2][2] == "o"
             or matrix[0][2] == matrix[1][1] == matrix[2][0] == "o"):
-        temp += 1
+        temp = 2
         count += 1
     if count == 2:
         return 'invalid game'
