@@ -1,5 +1,6 @@
 def mat(matrix):
     temp = 0
+    count = 0
     if (matrix[0][0] == matrix[1][0] == matrix[2][0] == "x"
         or matrix[0][1] == matrix[1][1] == matrix[2][1] == "x"
         or matrix[0][2] == matrix[1][2] == matrix[2][2] == "x"
@@ -7,6 +8,7 @@ def mat(matrix):
         or matrix[1][0] == matrix[1][1] == matrix[1][2] == "x"
         or matrix[2][0] == matrix[2][1] == matrix[2][2] == "x"):
         temp = 1
+        count += 1
     if (matrix[0][0] == matrix[1][0] == matrix[2][0] == "o"
         or matrix[0][1] == matrix[1][1] == matrix[2][1] == "o"
         or matrix[0][2] == matrix[1][2] == matrix[2][2] == "o"
@@ -14,20 +16,24 @@ def mat(matrix):
         or matrix[1][0] == matrix[1][1] == matrix[1][2] == "o"
         or matrix[2][0] == matrix[2][1] == matrix[2][2] == "o"):
         temp = 2
+        count += 1
     if (matrix[0][0] == matrix[1][1] == matrix[2][2] == "x"
         or matrix[0][2] == matrix[1][1] == matrix[2][0] == "x"):
         temp = 1
+        count = 0
+        count += 1
     if (matrix[0][0] == matrix[1][1] == matrix[2][2] == "o"
         or matrix[0][2] == matrix[1][1] == matrix[2][0] == "o"):
         temp = 2
-    if temp == 1 and temp == 2:
-        return 'invalid game'
-    if temp == 1:
+        count += 1
+    if temp == 1 and count == 1:
         return 'x'
-    if temp == 2:
+    if temp == 2 and count == 1:
         return 'o'
-    if temp == 0:
+    if temp == 0 and count == 1:
         return 'draw'
+    if temp == 1 and temp == 2 and count == 2:
+        return 'invalid game'
 
 def main():
     matrix = []
