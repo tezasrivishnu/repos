@@ -36,7 +36,7 @@ def main():
         matrix.append(input().split())
     for i in range(3):
         for j in range(3):
-            if matrix[i][j] == 'x' or matrix[i][j] == 'o':
+            if matrix[i][j] == "x" or matrix[i][j] == "o" or matrix[i][j] == ".":
                 flag = 1
             else:
                 flag = 0
