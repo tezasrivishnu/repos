@@ -19,8 +19,8 @@ def check_sudoku(sudoku):
             return False
     for i in range(9):
         for j in range(1):
-            if (sudoku[j][i] == sudoku[j+1][i] == sudoku[j][i] == sudoku[j+1][i]
-                == sudoku[j][i] == sudoku[j+1][i] == sudoku[j][i] == sudoku[j+1][i] == sudoku[j+7][i]):
+            if (sudoku[j][i] == sudoku[j+1][i] == sudoku[j+2][i] == sudoku[j+3][i] == sudoku[j+4][i]
+                == sudoku[j+5][i] == sudoku[j+6][i] == sudoku[j+7][i] == sudoku[j+8][i]):
                 return False
     for i in range(8):
         if sudoku[i][i] == sudoku[i+1][i+1]:
