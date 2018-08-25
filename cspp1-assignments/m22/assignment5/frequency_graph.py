@@ -18,7 +18,7 @@ def frequency_graph(dictionary):
                 lis__.append('#')
             if dictionary[lis_[key]] == 2:
                 lis__.append('##')
-    for _ in range(len(lis_)):
+    for _ in range(le_):
         print(str(lis_[_]) + " - " + str(lis__[_]))
 
 def main():
