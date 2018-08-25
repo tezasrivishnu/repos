@@ -11,9 +11,9 @@ def frequency_graph(dictionary):
     lis_ = sorted(dictionary)
     lis__ = []
     le_ = len(lis_)
-    le_1 = len(str(dictionary[lis_[key]]))
     for key in range(le_):
-        for _ in range(le_1):
+        le_1 = len(str(dictionary[lis_[key]]))
+        for values in range(le_1):
             if dictionary[lis_[key]] == 1:
                 lis__.append('#')
             if dictionary[lis_[key]] == 2:
