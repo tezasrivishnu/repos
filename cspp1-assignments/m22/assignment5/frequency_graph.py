@@ -11,7 +11,6 @@ def frequency_graph(dictionary):
     dic = {}
     lis_ = sorted(dictionary)
     lis__ = []
-    print(lis_)
     for key in range(len(lis_)):
         for values in range(dictionary[lis_[key]]):
             if dictionary[lis_[key]] == 1:
