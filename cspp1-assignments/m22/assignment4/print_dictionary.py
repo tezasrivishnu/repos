@@ -10,7 +10,8 @@ def print_dictionary(dictionary):
     :return dict keys and values seperated by -
     '''
     dict_keys = sorted(list(dictionary.keys()))
-    for _ in range(len(dict_keys)):
+    len_ = len(dict_keys)
+    for _ in range(len_):
         print(str(dict_keys[_]) + " - " + str(dictionary[dict_keys[_]]))
 
 def main():
