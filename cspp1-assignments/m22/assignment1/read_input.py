@@ -4,10 +4,8 @@ Write a python program to read multiple lines of text input and store the input 
 
 def main():
     '''
-    we are reading the input and giving the out in form 
+    we are reading the input and giving the out in form
     of string
-    '''
-    '''
     :params input- a interger and a string
     output- a string
     '''
