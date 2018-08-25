@@ -14,26 +14,33 @@ def check_sudoku(sudoku):
         The function has to return True for a valid sudoku grid and false otherwise
     '''
     k = len(sudoku)-1
+    flag = 0
+    while True:
     for i in range(9):
         if len(sudoku[i]) != len(set(sudoku[i])):
-            return False
+            flag = 1
+            # return False
     for i in range(9):
         for j in range(8):
             if sudoku[j][i] == sudoku[j+1][i]:
-                return False
+                flag = 1
+            # return False
     for i in range(8):
         if sudoku[i][i] == sudoku[i+1][i+1]:
-            return False
+            flag = 1
+            # return False
     for i in range (8):
         if sudoku[i][k] == sudoku[i+1][k-1]:
-            return False
+            flag = 1
+            # return False
     x = 0
     y = 0
     while x <= 8:
         if (sudoku[x][y] == sudoku[x][y+1] == sudoku[x][y+2]
                 == sudoku[x+1][y] == sudoku[x+1][y+1] == sudoku[x+1][y+2]
                 == sudoku[x+2][y] == sudoku[x+2][y+1] == sudoku[x+2][y+2]):
-            return False
+            flag = 1
+            # return False
         x += 3
     x = 0
     y = 3
@@ -41,7 +48,8 @@ def check_sudoku(sudoku):
         if (sudoku[x][y] == sudoku[x][y+1] == sudoku[x][y+2]
                 == sudoku[x+1][y] == sudoku[x+1][y+1] == sudoku[x+1][y+2]
                 == sudoku[x+2][y] == sudoku[x+2][y+1] == sudoku[x+2][y+2]):
-            return False
+            flag = 1
+            # return False
         x += 3
     x = 0
     y = 6
@@ -49,8 +57,11 @@ def check_sudoku(sudoku):
         if (sudoku[x][y] == sudoku[x][y+1] == sudoku[x][y+2]
                 == sudoku[x+1][y] == sudoku[x+1][y+1] == sudoku[x+1][y+2]
                 == sudoku[x+2][y] == sudoku[x+2][y+1] == sudoku[x+2][y+2]):
-            return False
+            flag = 1
+            # return False
         x += 3
+    if flag == 1:
+        return False
     return True
 
 def main():
