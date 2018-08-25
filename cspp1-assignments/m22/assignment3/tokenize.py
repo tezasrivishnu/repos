@@ -9,7 +9,8 @@ def tokenize(string):
     return - dict
     '''
     dic = {}
-    for index in range(len(string)):
+    le_ = len(string)
+    for index in range(le_):
         for word in string[index]:
             count = string[index].count(word)
             if word not in dic.keys():
