@@ -61,8 +61,7 @@ def check_sudoku(sudoku):
         x_x += 3
     if flag == 0:
         return True
-    else:
-        return False
+    return False
 def main():
     '''
         main function to read input sudoku from console
