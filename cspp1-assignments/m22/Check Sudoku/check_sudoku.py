@@ -20,8 +20,8 @@ def check_sudoku(sudoku):
         for j in range(8):
             if sudoku[j][i] == sudoku[j+1][i]:
                 return False
-    for i, j in range(8):
-        if sudoku[i][j] == sudoku[i+1][i+j]:
+    for i in range(8):
+        if sudoku[i][i] == sudoku[i+1][i+1]:
             return False
 
     return True
