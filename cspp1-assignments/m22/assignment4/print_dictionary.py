@@ -9,9 +9,9 @@ def print_dictionary(dictionary):
     :params input dictionnary
     :return dict keys and values seperated by -
     '''
-    dict_keys = list(sort(dictionary.keys()))
+    dict_keys = sorted(list(dictionary.keys()))
     for _ in range(len(dict_keys)):
-        print(str(dict_keys[_]) + " - " + str(dictionary[_]))
+        print(str(dict_keys[_]) + " - " + str(dictionary[dict_keys[_]]))
 
 def main():
     '''
