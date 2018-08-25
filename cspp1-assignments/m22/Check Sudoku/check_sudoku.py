@@ -27,30 +27,30 @@ def check_sudoku(sudoku):
     for i in range (8):
         if sudoku[i][k] == sudoku[i+1][k-1]:
             return False
-    x = 0
-    y = 0
-    while x <= 8:
-        if (sudoku[x][y] == sudoku[x][y+1] == sudoku[x][y+2]
-                == sudoku[x+1][y] == sudoku[x+1][y+1] == sudoku[x+1][y+2]
-                == sudoku[x+2][y] == sudoku[x+2][y+1] == sudoku[x+2][y+2]):
+    x_x = 0
+    y_y = 0
+    while x_x <= 8:
+        if (sudoku[x_x][y_y] == sudoku[x_x][y_y+1] == sudoku[x_x][y_y+2]
+                == sudoku[x_x+1][y_y] == sudoku[x_x+1][y_y+1] == sudoku[x_x+1][y_y+2]
+                == sudoku[x_x+2][y_y] == sudoku[x_x+2][y_y+1] == sudoku[x_x+2][y_y+2]):
             return False
-        x += 3
-    x = 0
-    y = 3
-    while x <= 8:
-        if (sudoku[x][y] == sudoku[x][y+1] == sudoku[x][y+2]
-                == sudoku[x+1][y] == sudoku[x+1][y+1] == sudoku[x+1][y+2]
-                == sudoku[x+2][y] == sudoku[x+2][y+1] == sudoku[x+2][y+2]):
+        x_x += 3
+    x_x = 0
+    y_y = 3
+    while x_x <= 8:
+        if (sudoku[x_x][y_y] == sudoku[x_x][y_y+1] == sudoku[x_x][y_y+2]
+                == sudoku[x_x+1][y_y] == sudoku[x_x+1][y_y+1] == sudoku[x_x+1][y_y+2]
+                == sudoku[x_x+2][y_y] == sudoku[x_x+2][y_y+1] == sudoku[x_x+2][y_y+2]):
             return False
-        x += 3
-    x = 0
-    y = 6
-    while x <= 8:
-        if (sudoku[x][y] == sudoku[x][y+1] == sudoku[x][y+2]
-                == sudoku[x+1][y] == sudoku[x+1][y+1] == sudoku[x+1][y+2]
-                == sudoku[x+2][y] == sudoku[x+2][y+1] == sudoku[x+2][y+2]):
+        x_x += 3
+    x_x = 0
+    y_y = 6
+    while x_x <= 8:
+        if (sudoku[x_x][y_y] == sudoku[x_x][y_y+1] == sudoku[x_x][y_y+2]
+                == sudoku[x_x+1][y_y] == sudoku[x_x+1][y_y+1] == sudoku[x_x+1][y_y+2]
+                == sudoku[x_x+2][y_y] == sudoku[x_x+2][y_y+1] == sudoku[x_x+2][y+2]):
             return False
-        x += 3
+        x_x += 3
     return True
 
 def main():
@@ -58,12 +58,11 @@ def main():
         main function to read input sudoku from console
         call check_sudoku function and print the result to console
     '''
-    
     # initialize empty list
     sudoku = []
 
     # loop to read 9 lines of input from console
-    for i in range(9):
+    for _ in range(9):
         # read a line, split it on SPACE and append row to list
         row = input().split(' ')
         sudoku.append(row)
