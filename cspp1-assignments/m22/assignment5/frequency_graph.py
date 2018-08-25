@@ -13,13 +13,13 @@ def frequency_graph(dictionary):
     lis__ = []
     print(lis_)
     for key in range(len(lis_)):
-    	for values in range(dictionary[lis_[key]]):
+        for values in range(dictionary[lis_[key]]):
             if dictionary[lis_[key]] == 1:
                 lis__.append('#')
-    		if dictionary[lis_[key]] == 2:
+            if dictionary[lis_[key]] == 2:
                 lis__.append('##')
     for _ in range(len(lis_)):
-    	print(str(lis_[_]) + " - " + str(lis__[_]))
+        print(str(lis_[_]) + " - " + str(lis__[_]))
 
 def main():
     dictionary = eval(input())
