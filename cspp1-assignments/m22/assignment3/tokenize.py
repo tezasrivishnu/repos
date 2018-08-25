@@ -4,6 +4,15 @@ each word
 '''
 
 def tokenize(string):
+	dic = {}
+	for index in range(len(string)):
+		for word in string[index]:
+			count = string[index].count(word)
+			if word not in dic.keys():
+				dic[word]  = count
+	return dic
+
+
     
 def main():
     input_number = int(input())
