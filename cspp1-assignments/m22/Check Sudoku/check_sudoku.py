@@ -19,12 +19,12 @@ def check_sudoku(sudoku):
             return False
     for i in range(9):
         for j in range(8):
-            if sudoku[j][i] == sudoku[j+1][i] :
+            if sudoku[j][i] == sudoku[j+1][i]:
                 return False
     for i in range(8):
         if sudoku[i][i] == sudoku[i+1][i+1]:
             return False
-    for i in range (8):
+    for i in range(8):
         if sudoku[i][k] == sudoku[i+1][k-1]:
             return False
     x_x = 0
@@ -48,7 +48,7 @@ def check_sudoku(sudoku):
     while x_x <= 8:
         if (sudoku[x_x][y_y] == sudoku[x_x][y_y+1] == sudoku[x_x][y_y+2]
                 == sudoku[x_x+1][y_y] == sudoku[x_x+1][y_y+1] == sudoku[x_x+1][y_y+2]
-                == sudoku[x_x+2][y_y] == sudoku[x_x+2][y_y+1] == sudoku[x_x+2][y+2]):
+                == sudoku[x_x+2][y_y] == sudoku[x_x+2][y_y+1] == sudoku[x_x+2][y_y+2]):
             return False
         x_x += 3
     return True
