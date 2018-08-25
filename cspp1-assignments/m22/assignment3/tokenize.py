@@ -4,10 +4,13 @@ each word
 '''
 
 def tokenize(string):
-    pass
-            
+    
 def main():
-    pass
+    input_number = int(input())
+    list_input = []
+    for _ in range(input_number):
+        list_input.append(input().split())
+    print(tokenize(list_input))
 
 if __name__ == '__main__':
     main()
