@@ -27,12 +27,14 @@ def check_sudoku(sudoku):
     for i in range (8):
         if sudoku[i][k] == sudoku[i+1][k-1]:
             return False
-    for i in range(1):
-        for j in range(1):
-            if (sudoku[i][j] == sudoku[i][j+1] == sudoku[i][j+2]
-                    == sudoku[i+1][j] == sudoku[i+1][j+1] == sudoku[i+1][j+2]
-                    == sudoku[i+2][j] == sudoku[i+2][j+1] == sudoku[i+2][j+2]):
-                return False
+    x = 0
+    y = 0
+    while x <= 8:
+        if (sudoku[x][y] == sudoku[x][y+1] == sudoku[x][y+2]
+                == sudoku[x+1][y] == sudoku[x+1][y+1] == sudoku[x+1][y+2]
+                == sudoku[x+2][y] == sudoku[x+2][y+1] == sudoku[x+2][y+2]):
+            return False
+        x += 3
 
 
     return True
