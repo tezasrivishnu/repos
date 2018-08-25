@@ -4,17 +4,23 @@ each word
 '''
 
 def tokenize(string):
-	dic = {}
-	for index in range(len(string)):
-		for word in string[index]:
-			count = string[index].count(word)
-			if word not in dic.keys():
-				dic[word]  = count
-	return dic
-
-
-    
+    '''
+    input - list
+    return - dict
+    '''
+    dic = {}
+    for index in range(len(string)):
+        for word in string[index]:
+            count = string[index].count(word)
+            if word not in dic.keys():
+                dic[word]  = count
+    return dic
+   
 def main():
+    '''
+    input-  a number and integer
+    output - dictionary
+    '''
     input_number = int(input())
     list_input = []
     for _ in range(input_number):
