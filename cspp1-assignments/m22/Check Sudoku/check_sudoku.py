@@ -35,6 +35,14 @@ def check_sudoku(sudoku):
                 == sudoku[x+2][y] == sudoku[x+2][y+1] == sudoku[x+2][y+2]):
             return False
         x += 3
+    x = 0
+    y = 3
+    while x <= 8:
+        if (sudoku[x][y] == sudoku[x][y+1] == sudoku[x][y+2]
+                == sudoku[x+1][y] == sudoku[x+1][y+1] == sudoku[x+1][y+2]
+                == sudoku[x+2][y] == sudoku[x+2][y+1] == sudoku[x+2][y+2]):
+            return False
+        x += 3
 
 
     return True
