@@ -13,27 +13,33 @@ def check_sudoku(sudoku):
         Your solution goes here. You may add other helper functions as needed.
         The function has to return True for a valid sudoku grid and false otherwise
     '''
+    flag = 0
     k = len(sudoku)-1
     for i in range(9):
         if len(sudoku[i]) != len(set(sudoku[i])):
-            return False
+            flag = 1
+            # return False
     for i in range(9):
         for j in range(8):
             if sudoku[j][i] == sudoku[j+1][i]:
-                return False
+                flag = 1
+            # return False
     for i in range(8):
         if sudoku[i][i] == sudoku[i+1][i+1]:
-            return False
+            flag = 1
+            # return False
     for i in range(8):
         if sudoku[i][k] == sudoku[i+1][k-1]:
-            return False
+            flag = 1
+            # return False
     x_x = 0
     y_y = 0
     while x_x <= 8:
         if (sudoku[x_x][y_y] == sudoku[x_x][y_y+1] == sudoku[x_x][y_y+2]
                 == sudoku[x_x+1][y_y] == sudoku[x_x+1][y_y+1] == sudoku[x_x+1][y_y+2]
                 == sudoku[x_x+2][y_y] == sudoku[x_x+2][y_y+1] == sudoku[x_x+2][y_y+2]):
-            return False
+            flag = 1
+            # return False
         x_x += 3
     x_x = 0
     y_y = 3
@@ -41,7 +47,8 @@ def check_sudoku(sudoku):
         if (sudoku[x_x][y_y] == sudoku[x_x][y_y+1] == sudoku[x_x][y_y+2]
                 == sudoku[x_x+1][y_y] == sudoku[x_x+1][y_y+1] == sudoku[x_x+1][y_y+2]
                 == sudoku[x_x+2][y_y] == sudoku[x_x+2][y_y+1] == sudoku[x_x+2][y_y+2]):
-            return False
+            flag = 1
+            # return False
         x_x += 3
     x_x = 0
     y_y = 6
@@ -49,10 +56,13 @@ def check_sudoku(sudoku):
         if (sudoku[x_x][y_y] == sudoku[x_x][y_y+1] == sudoku[x_x][y_y+2]
                 == sudoku[x_x+1][y_y] == sudoku[x_x+1][y_y+1] == sudoku[x_x+1][y_y+2]
                 == sudoku[x_x+2][y_y] == sudoku[x_x+2][y_y+1] == sudoku[x_x+2][y_y+2]):
-            return False
+            flag = 1
+            # return False
         x_x += 3
-    return True
-
+    if flag == 0:
+        return True
+    else:
+        return False
 def main():
     '''
         main function to read input sudoku from console
