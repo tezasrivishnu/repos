@@ -274,20 +274,12 @@ Your Output:
 Given sudoku is solved
 ----------------------------------------
 
-########## Testcase 17: Failed ##########
+########## Testcase 17: Passed ##########
 Expected Output: 
 Invalid input
 
 Your Output: 
-
-Traceback (most recent call last):
-  File "Solution.py", line 144, in <module>
-    main()
-  File "Solution.py", line 23, in main
-    print(sudoku(lis,i,j))
-  File "Solution.py", line 27, in sudoku
-    tem.append(lis[k][j])
-IndexError: list index out of range
+Invalid input
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -369,21 +361,12 @@ Your Output:
 Given sudoku is solved
 ----------------------------------------
 
-########## Testcase 20: Failed ##########
+########## Testcase 20: Passed ##########
 Expected Output: 
 Invalid input
 
 Your Output: 
-
-6
-Traceback (most recent call last):
-  File "Solution.py", line 144, in <module>
-    main()
-  File "Solution.py", line 23, in main
-    print(sudoku(lis,i,j))
-  File "Solution.py", line 29, in sudoku
-    tem.append(lis[i][m])
-IndexError: list index out of range
+Invalid input
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########

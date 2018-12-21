@@ -1,262 +1,192 @@
 ************* Module Solution
-Solution.py:3:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:4:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:5:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:6:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:7:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:8:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:9:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:10:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:11:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:12:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:12:9: C0326: Exactly one space required around comparison
-			if i%9==0 and i!=0:
-         ^^ (bad-whitespace)
+Solution.py:5:15: C0326: Exactly one space required around comparison
+    if len(inp)>81 or len(inp)<81:
+               ^ (bad-whitespace)
+Solution.py:5:30: C0326: Exactly one space required around comparison
+    if len(inp)>81 or len(inp)<81:
+                              ^ (bad-whitespace)
 Solution.py:12:18: C0326: Exactly one space required around comparison
-			if i%9==0 and i!=0:
+            if i%9==0 and i!=0:
                   ^^ (bad-whitespace)
-Solution.py:13:20: C0303: Trailing whitespace (trailing-whitespace)
-Solution.py:13:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:14:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:15:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:16:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:20:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:21:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:22:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:23:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:23:21: C0326: Exactly one space required after comma
-					print(sudoku(lis,i,j))
-                     ^ (bad-whitespace)
-Solution.py:23:23: C0326: Exactly one space required after comma
-					print(sudoku(lis,i,j))
-                       ^ (bad-whitespace)
-Solution.py:24:14: C0326: Exactly one space required after comma
+Solution.py:12:27: C0326: Exactly one space required around comparison
+            if i%9==0 and i!=0:
+                           ^^ (bad-whitespace)
+Solution.py:13:32: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:27:40: C0326: Exactly one space required after comma
+                        res = sudoku(lis,i,j)
+                                        ^ (bad-whitespace)
+Solution.py:27:42: C0326: Exactly one space required after comma
+                        res = sudoku(lis,i,j)
+                                          ^ (bad-whitespace)
+Solution.py:29:14: C0326: Exactly one space required after comma
 def sudoku(lis,i,j):
               ^ (bad-whitespace)
-Solution.py:24:16: C0326: Exactly one space required after comma
+Solution.py:29:16: C0326: Exactly one space required after comma
 def sudoku(lis,i,j):
                 ^ (bad-whitespace)
-Solution.py:25:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:26:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:27:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:28:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:29:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:30:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:31:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:31:18: C0326: Exactly one space required after comma
-		for x in range(0,3):
-                  ^ (bad-whitespace)
-Solution.py:32:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:32:19: C0326: Exactly one space required after comma
-			for y in range(0,3):
-                   ^ (bad-whitespace)
-Solution.py:33:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:34:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:35:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:35:18: C0326: Exactly one space required after comma
-		for x in range(0,3):
-                  ^ (bad-whitespace)
-Solution.py:36:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:36:19: C0326: Exactly one space required after comma
-			for y in range(3,6):
-                   ^ (bad-whitespace)
-Solution.py:37:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:38:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:39:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:39:18: C0326: Exactly one space required after comma
-		for x in range(0,3):
-                  ^ (bad-whitespace)
-Solution.py:40:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:40:19: C0326: Exactly one space required after comma
-			for y in range(6,9):
-                   ^ (bad-whitespace)
-Solution.py:41:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:42:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:43:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:43:18: C0326: Exactly one space required after comma
-		for x in range(3,6):
-                  ^ (bad-whitespace)
-Solution.py:44:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:44:19: C0326: Exactly one space required after comma
-			for y in range(0,3):
-                   ^ (bad-whitespace)
-Solution.py:45:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:46:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:47:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:47:18: C0326: Exactly one space required after comma
-		for x in range(3,6):
-                  ^ (bad-whitespace)
-Solution.py:48:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:48:19: C0326: Exactly one space required after comma
-			for y in range(3,6):
-                   ^ (bad-whitespace)
-Solution.py:49:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:50:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:51:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:51:18: C0326: Exactly one space required after comma
-		for x in range(3,6):
-                  ^ (bad-whitespace)
-Solution.py:52:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:52:19: C0326: Exactly one space required after comma
-			for y in range(6,9):
-                   ^ (bad-whitespace)
-Solution.py:53:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:54:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:55:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:55:18: C0326: Exactly one space required after comma
-		for x in range(6,9):
-                  ^ (bad-whitespace)
-Solution.py:56:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:56:19: C0326: Exactly one space required after comma
-			for y in range(0,3):
-                   ^ (bad-whitespace)
-Solution.py:57:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:58:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:59:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:59:18: C0326: Exactly one space required after comma
-		for x in range(6,9):
-                  ^ (bad-whitespace)
-Solution.py:60:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:60:19: C0326: Exactly one space required after comma
-			for y in range(3,6):
-                   ^ (bad-whitespace)
-Solution.py:61:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:62:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:63:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:63:18: C0326: Exactly one space required after comma
-		for x in range(6,9):
-                  ^ (bad-whitespace)
-Solution.py:64:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:64:19: C0326: Exactly one space required after comma
-			for y in range(6,9):
-                   ^ (bad-whitespace)
-Solution.py:65:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:66:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:67:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:68:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:69:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:69:20: C0326: Exactly one space required after comma
-	inti = list(map(int,string))
-                    ^ (bad-whitespace)
-Solution.py:70:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:70:11: C0326: Exactly one space required after comma
-	whole = [1,2,3,4,5,6,7,8,9]
-           ^ (bad-whitespace)
-Solution.py:70:13: C0326: Exactly one space required after comma
-	whole = [1,2,3,4,5,6,7,8,9]
-             ^ (bad-whitespace)
-Solution.py:70:15: C0326: Exactly one space required after comma
-	whole = [1,2,3,4,5,6,7,8,9]
-               ^ (bad-whitespace)
-Solution.py:70:17: C0326: Exactly one space required after comma
-	whole = [1,2,3,4,5,6,7,8,9]
-                 ^ (bad-whitespace)
-Solution.py:70:19: C0326: Exactly one space required after comma
-	whole = [1,2,3,4,5,6,7,8,9]
-                   ^ (bad-whitespace)
-Solution.py:70:21: C0326: Exactly one space required after comma
-	whole = [1,2,3,4,5,6,7,8,9]
-                     ^ (bad-whitespace)
-Solution.py:70:23: C0326: Exactly one space required after comma
-	whole = [1,2,3,4,5,6,7,8,9]
-                       ^ (bad-whitespace)
-Solution.py:70:25: C0326: Exactly one space required after comma
-	whole = [1,2,3,4,5,6,7,8,9]
-                         ^ (bad-whitespace)
-Solution.py:71:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:72:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:73:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:74:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:75:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Solution.py:37:24: C0326: Exactly one space required after comma
+        for x in range(0,3):
+                        ^ (bad-whitespace)
+Solution.py:38:28: C0326: Exactly one space required after comma
+            for y in range(0,3):
+                            ^ (bad-whitespace)
+Solution.py:41:24: C0326: Exactly one space required after comma
+        for x in range(0,3):
+                        ^ (bad-whitespace)
+Solution.py:42:28: C0326: Exactly one space required after comma
+            for y in range(3,6):
+                            ^ (bad-whitespace)
+Solution.py:45:24: C0326: Exactly one space required after comma
+        for x in range(0,3):
+                        ^ (bad-whitespace)
+Solution.py:46:28: C0326: Exactly one space required after comma
+            for y in range(6,9):
+                            ^ (bad-whitespace)
+Solution.py:49:24: C0326: Exactly one space required after comma
+        for x in range(3,6):
+                        ^ (bad-whitespace)
+Solution.py:50:28: C0326: Exactly one space required after comma
+            for y in range(0,3):
+                            ^ (bad-whitespace)
+Solution.py:53:24: C0326: Exactly one space required after comma
+        for x in range(3,6):
+                        ^ (bad-whitespace)
+Solution.py:54:28: C0326: Exactly one space required after comma
+            for y in range(3,6):
+                            ^ (bad-whitespace)
+Solution.py:57:24: C0326: Exactly one space required after comma
+        for x in range(3,6):
+                        ^ (bad-whitespace)
+Solution.py:58:28: C0326: Exactly one space required after comma
+            for y in range(6,9):
+                            ^ (bad-whitespace)
+Solution.py:61:24: C0326: Exactly one space required after comma
+        for x in range(6,9):
+                        ^ (bad-whitespace)
+Solution.py:62:28: C0326: Exactly one space required after comma
+            for y in range(0,3):
+                            ^ (bad-whitespace)
+Solution.py:65:24: C0326: Exactly one space required after comma
+        for x in range(6,9):
+                        ^ (bad-whitespace)
+Solution.py:66:28: C0326: Exactly one space required after comma
+            for y in range(3,6):
+                            ^ (bad-whitespace)
+Solution.py:69:24: C0326: Exactly one space required after comma
+        for x in range(6,9):
+                        ^ (bad-whitespace)
+Solution.py:70:28: C0326: Exactly one space required after comma
+            for y in range(6,9):
+                            ^ (bad-whitespace)
 Solution.py:75:23: C0326: Exactly one space required after comma
-	string1 = list(map(str,numbers))
+    inti = list(map(int,string))
                        ^ (bad-whitespace)
-Solution.py:76:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:77:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:88:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:88:13: C0326: Exactly one space required after comma
-	whole = ['1','2','3','4','5','6','7','8','9']
-             ^ (bad-whitespace)
-Solution.py:88:17: C0326: Exactly one space required after comma
-	whole = ['1','2','3','4','5','6','7','8','9']
-                 ^ (bad-whitespace)
-Solution.py:88:21: C0326: Exactly one space required after comma
-	whole = ['1','2','3','4','5','6','7','8','9']
-                     ^ (bad-whitespace)
-Solution.py:88:25: C0326: Exactly one space required after comma
-	whole = ['1','2','3','4','5','6','7','8','9']
-                         ^ (bad-whitespace)
-Solution.py:88:29: C0326: Exactly one space required after comma
-	whole = ['1','2','3','4','5','6','7','8','9']
-                             ^ (bad-whitespace)
-Solution.py:88:33: C0326: Exactly one space required after comma
-	whole = ['1','2','3','4','5','6','7','8','9']
-                                 ^ (bad-whitespace)
-Solution.py:88:37: C0326: Exactly one space required after comma
-	whole = ['1','2','3','4','5','6','7','8','9']
-                                     ^ (bad-whitespace)
-Solution.py:88:41: C0326: Exactly one space required after comma
-	whole = ['1','2','3','4','5','6','7','8','9']
-                                         ^ (bad-whitespace)
-Solution.py:89:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:90:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:91:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:92:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:93:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:94:0: C0303: Trailing whitespace (trailing-whitespace)
-Solution.py:145:0: C0305: Trailing newlines (trailing-newlines)
+Solution.py:76:14: C0326: Exactly one space required after comma
+    whole = [1,2,3,4,5,6,7,8,9]
+              ^ (bad-whitespace)
+Solution.py:76:16: C0326: Exactly one space required after comma
+    whole = [1,2,3,4,5,6,7,8,9]
+                ^ (bad-whitespace)
+Solution.py:76:18: C0326: Exactly one space required after comma
+    whole = [1,2,3,4,5,6,7,8,9]
+                  ^ (bad-whitespace)
+Solution.py:76:20: C0326: Exactly one space required after comma
+    whole = [1,2,3,4,5,6,7,8,9]
+                    ^ (bad-whitespace)
+Solution.py:76:22: C0326: Exactly one space required after comma
+    whole = [1,2,3,4,5,6,7,8,9]
+                      ^ (bad-whitespace)
+Solution.py:76:24: C0326: Exactly one space required after comma
+    whole = [1,2,3,4,5,6,7,8,9]
+                        ^ (bad-whitespace)
+Solution.py:76:26: C0326: Exactly one space required after comma
+    whole = [1,2,3,4,5,6,7,8,9]
+                          ^ (bad-whitespace)
+Solution.py:76:28: C0326: Exactly one space required after comma
+    whole = [1,2,3,4,5,6,7,8,9]
+                            ^ (bad-whitespace)
+Solution.py:82:26: C0326: Exactly one space required after comma
+    string1 = list(map(str,numbers))
+                          ^ (bad-whitespace)
+Solution.py:95:16: C0326: Exactly one space required after comma
+    whole = ['1','2','3','4','5','6','7','8','9']
+                ^ (bad-whitespace)
+Solution.py:95:20: C0326: Exactly one space required after comma
+    whole = ['1','2','3','4','5','6','7','8','9']
+                    ^ (bad-whitespace)
+Solution.py:95:24: C0326: Exactly one space required after comma
+    whole = ['1','2','3','4','5','6','7','8','9']
+                        ^ (bad-whitespace)
+Solution.py:95:28: C0326: Exactly one space required after comma
+    whole = ['1','2','3','4','5','6','7','8','9']
+                            ^ (bad-whitespace)
+Solution.py:95:32: C0326: Exactly one space required after comma
+    whole = ['1','2','3','4','5','6','7','8','9']
+                                ^ (bad-whitespace)
+Solution.py:95:36: C0326: Exactly one space required after comma
+    whole = ['1','2','3','4','5','6','7','8','9']
+                                    ^ (bad-whitespace)
+Solution.py:95:40: C0326: Exactly one space required after comma
+    whole = ['1','2','3','4','5','6','7','8','9']
+                                        ^ (bad-whitespace)
+Solution.py:95:44: C0326: Exactly one space required after comma
+    whole = ['1','2','3','4','5','6','7','8','9']
+                                            ^ (bad-whitespace)
+Solution.py:101:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:152:0: C0305: Trailing newlines (trailing-newlines)
 Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
 Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
 Solution.py:2:0: C0111: Missing function docstring (missing-docstring)
-Solution.py:11:2: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
-Solution.py:20:2: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
-Solution.py:24:0: C0111: Missing function docstring (missing-docstring)
-Solution.py:26:1: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
-Solution.py:28:5: C0103: Variable name "m" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:30:5: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:30:29: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:31:6: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:32:7: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:34:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:34:31: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:35:6: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:36:7: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:38:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:38:31: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:39:6: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:40:7: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:42:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:42:31: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:43:6: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:44:7: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:46:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:46:31: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:47:6: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:48:7: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:50:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:50:31: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:51:6: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:52:7: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:54:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:54:31: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:55:6: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:56:7: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:58:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:58:31: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:59:6: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:60:7: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:62:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:62:31: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:63:6: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:64:7: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:72:1: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
-Solution.py:72:5: C0103: Variable name "h" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:24:0: R0912: Too many branches (31/12) (too-many-branches)
-Solution.py:78:0: C0111: Missing function docstring (missing-docstring)
-Solution.py:90:1: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
-Solution.py:90:5: C0103: Variable name "h" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:11:8: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+Solution.py:20:8: C0103: Variable name "ch" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:24:12: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+Solution.py:29:0: C0111: Missing function docstring (missing-docstring)
+Solution.py:32:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+Solution.py:34:8: C0103: Variable name "m" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:36:8: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:36:32: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:37:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:38:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:40:10: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:40:34: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:41:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:42:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:44:10: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:44:34: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:45:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:46:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:48:10: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:48:34: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:49:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:50:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:52:10: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:52:34: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:53:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:54:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:56:10: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:56:34: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:57:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:58:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:60:10: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:60:34: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:61:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:62:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:64:10: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:64:34: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:65:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:66:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:68:10: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:68:34: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:69:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:70:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:78:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+Solution.py:78:8: C0103: Variable name "h" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:29:0: R0912: Too many branches (31/12) (too-many-branches)
+Solution.py:85:0: C0111: Missing function docstring (missing-docstring)
+Solution.py:97:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+Solution.py:97:8: C0103: Variable name "h" doesn't conform to snake_case naming style (invalid-name)
 Solution.py:1:0: W0611: Unused import re (unused-import)
 
-----------------------------------------------------------------------
-Your code has been rated at -11.36/10 (previous run: -11.48/10, +0.12)
+---------------------------------------------------------------------
+Your code has been rated at -1.38/10 (previous run: -11.36/10, +9.98)
 
