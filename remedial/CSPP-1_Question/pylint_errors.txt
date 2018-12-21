@@ -12,6 +12,8 @@ Solution.py:12:27: C0326: Exactly one space required around comparison
             if i%9==0 and i!=0:
                            ^^ (bad-whitespace)
 Solution.py:13:32: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:18:0: W0311: Bad indentation. Found 10 spaces, expected 12 (bad-indentation)
+Solution.py:19:0: W0311: Bad indentation. Found 10 spaces, expected 12 (bad-indentation)
 Solution.py:25:17: C0326: Exactly one space required after comparison
         if count ==9:
                  ^^ (bad-whitespace)
@@ -27,170 +29,211 @@ def sudoku(lis,i,j):
 Solution.py:33:16: C0326: Exactly one space required after comma
 def sudoku(lis,i,j):
                 ^ (bad-whitespace)
-Solution.py:40:24: C0326: Exactly one space required after comma
-        for x in range(0,3):
-                        ^ (bad-whitespace)
-Solution.py:41:28: C0326: Exactly one space required after comma
-            for y in range(0,3):
-                            ^ (bad-whitespace)
-Solution.py:44:24: C0326: Exactly one space required after comma
-        for x in range(0,3):
-                        ^ (bad-whitespace)
-Solution.py:45:28: C0326: Exactly one space required after comma
-            for y in range(3,6):
-                            ^ (bad-whitespace)
-Solution.py:48:24: C0326: Exactly one space required after comma
-        for x in range(0,3):
-                        ^ (bad-whitespace)
-Solution.py:49:28: C0326: Exactly one space required after comma
-            for y in range(6,9):
-                            ^ (bad-whitespace)
-Solution.py:52:24: C0326: Exactly one space required after comma
-        for x in range(3,6):
-                        ^ (bad-whitespace)
-Solution.py:53:28: C0326: Exactly one space required after comma
-            for y in range(0,3):
-                            ^ (bad-whitespace)
-Solution.py:56:24: C0326: Exactly one space required after comma
-        for x in range(3,6):
-                        ^ (bad-whitespace)
-Solution.py:57:28: C0326: Exactly one space required after comma
-            for y in range(3,6):
-                            ^ (bad-whitespace)
-Solution.py:60:24: C0326: Exactly one space required after comma
-        for x in range(3,6):
-                        ^ (bad-whitespace)
-Solution.py:61:28: C0326: Exactly one space required after comma
-            for y in range(6,9):
-                            ^ (bad-whitespace)
-Solution.py:64:24: C0326: Exactly one space required after comma
-        for x in range(6,9):
-                        ^ (bad-whitespace)
-Solution.py:65:28: C0326: Exactly one space required after comma
-            for y in range(0,3):
-                            ^ (bad-whitespace)
-Solution.py:68:24: C0326: Exactly one space required after comma
-        for x in range(6,9):
-                        ^ (bad-whitespace)
-Solution.py:69:28: C0326: Exactly one space required after comma
-            for y in range(3,6):
-                            ^ (bad-whitespace)
-Solution.py:72:24: C0326: Exactly one space required after comma
-        for x in range(6,9):
-                        ^ (bad-whitespace)
-Solution.py:73:28: C0326: Exactly one space required after comma
-            for y in range(6,9):
-                            ^ (bad-whitespace)
-Solution.py:78:23: C0326: Exactly one space required after comma
-    inti = list(map(int,string))
-                       ^ (bad-whitespace)
-Solution.py:79:14: C0326: Exactly one space required after comma
-    whole = [1,2,3,4,5,6,7,8,9]
-              ^ (bad-whitespace)
-Solution.py:79:16: C0326: Exactly one space required after comma
-    whole = [1,2,3,4,5,6,7,8,9]
-                ^ (bad-whitespace)
-Solution.py:79:18: C0326: Exactly one space required after comma
-    whole = [1,2,3,4,5,6,7,8,9]
+Solution.py:35:18: C0326: Exactly one space required after comma
+    hor = hori(lis,i,j)
                   ^ (bad-whitespace)
-Solution.py:79:20: C0326: Exactly one space required after comma
-    whole = [1,2,3,4,5,6,7,8,9]
+Solution.py:35:20: C0326: Exactly one space required after comma
+    hor = hori(lis,i,j)
                     ^ (bad-whitespace)
-Solution.py:79:22: C0326: Exactly one space required after comma
-    whole = [1,2,3,4,5,6,7,8,9]
-                      ^ (bad-whitespace)
-Solution.py:79:24: C0326: Exactly one space required after comma
-    whole = [1,2,3,4,5,6,7,8,9]
-                        ^ (bad-whitespace)
-Solution.py:79:26: C0326: Exactly one space required after comma
-    whole = [1,2,3,4,5,6,7,8,9]
-                          ^ (bad-whitespace)
-Solution.py:79:28: C0326: Exactly one space required after comma
-    whole = [1,2,3,4,5,6,7,8,9]
+Solution.py:36:18: C0326: Exactly one space required after comma
+    ver = veri(lis,i,j)
+                  ^ (bad-whitespace)
+Solution.py:36:20: C0326: Exactly one space required after comma
+    ver = veri(lis,i,j)
+                    ^ (bad-whitespace)
+Solution.py:45:28: C0326: Exactly one space required after comma
+            for x in range(0,3):
                             ^ (bad-whitespace)
+Solution.py:46:32: C0326: Exactly one space required after comma
+                for y in range(0,3):
+                                ^ (bad-whitespace)
+Solution.py:49:28: C0326: Exactly one space required after comma
+            for x in range(0,3):
+                            ^ (bad-whitespace)
+Solution.py:50:32: C0326: Exactly one space required after comma
+                for y in range(3,6):
+                                ^ (bad-whitespace)
+Solution.py:53:28: C0326: Exactly one space required after comma
+            for x in range(0,3):
+                            ^ (bad-whitespace)
+Solution.py:54:32: C0326: Exactly one space required after comma
+                for y in range(6,9):
+                                ^ (bad-whitespace)
+Solution.py:57:28: C0326: Exactly one space required after comma
+            for x in range(3,6):
+                            ^ (bad-whitespace)
+Solution.py:58:32: C0326: Exactly one space required after comma
+                for y in range(0,3):
+                                ^ (bad-whitespace)
+Solution.py:61:28: C0326: Exactly one space required after comma
+            for x in range(3,6):
+                            ^ (bad-whitespace)
+Solution.py:62:32: C0326: Exactly one space required after comma
+                for y in range(3,6):
+                                ^ (bad-whitespace)
+Solution.py:65:28: C0326: Exactly one space required after comma
+            for x in range(3,6):
+                            ^ (bad-whitespace)
+Solution.py:66:32: C0326: Exactly one space required after comma
+                for y in range(6,9):
+                                ^ (bad-whitespace)
+Solution.py:69:28: C0326: Exactly one space required after comma
+            for x in range(6,9):
+                            ^ (bad-whitespace)
+Solution.py:70:32: C0326: Exactly one space required after comma
+                for y in range(0,3):
+                                ^ (bad-whitespace)
+Solution.py:73:28: C0326: Exactly one space required after comma
+            for x in range(6,9):
+                            ^ (bad-whitespace)
+Solution.py:74:32: C0326: Exactly one space required after comma
+                for y in range(3,6):
+                                ^ (bad-whitespace)
+Solution.py:77:28: C0326: Exactly one space required after comma
+            for x in range(6,9):
+                            ^ (bad-whitespace)
+Solution.py:78:32: C0326: Exactly one space required after comma
+                for y in range(6,9):
+                                ^ (bad-whitespace)
+Solution.py:83:27: C0326: Exactly one space required after comma
+        inti = list(map(int,string))
+                           ^ (bad-whitespace)
+Solution.py:84:18: C0326: Exactly one space required after comma
+        whole = [1,2,3,4,5,6,7,8,9]
+                  ^ (bad-whitespace)
+Solution.py:84:20: C0326: Exactly one space required after comma
+        whole = [1,2,3,4,5,6,7,8,9]
+                    ^ (bad-whitespace)
+Solution.py:84:22: C0326: Exactly one space required after comma
+        whole = [1,2,3,4,5,6,7,8,9]
+                      ^ (bad-whitespace)
+Solution.py:84:24: C0326: Exactly one space required after comma
+        whole = [1,2,3,4,5,6,7,8,9]
+                        ^ (bad-whitespace)
 Solution.py:84:26: C0326: Exactly one space required after comma
-    string1 = list(map(str,numbers))
+        whole = [1,2,3,4,5,6,7,8,9]
                           ^ (bad-whitespace)
-Solution.py:97:16: C0326: Exactly one space required after comma
+Solution.py:84:28: C0326: Exactly one space required after comma
+        whole = [1,2,3,4,5,6,7,8,9]
+                            ^ (bad-whitespace)
+Solution.py:84:30: C0326: Exactly one space required after comma
+        whole = [1,2,3,4,5,6,7,8,9]
+                              ^ (bad-whitespace)
+Solution.py:84:32: C0326: Exactly one space required after comma
+        whole = [1,2,3,4,5,6,7,8,9]
+                                ^ (bad-whitespace)
+Solution.py:89:30: C0326: Exactly one space required after comma
+        string1 = list(map(str,numbers))
+                              ^ (bad-whitespace)
+Solution.py:102:16: C0326: Exactly one space required after comma
     whole = ['1','2','3','4','5','6','7','8','9']
                 ^ (bad-whitespace)
-Solution.py:97:20: C0326: Exactly one space required after comma
+Solution.py:102:20: C0326: Exactly one space required after comma
     whole = ['1','2','3','4','5','6','7','8','9']
                     ^ (bad-whitespace)
-Solution.py:97:24: C0326: Exactly one space required after comma
+Solution.py:102:24: C0326: Exactly one space required after comma
     whole = ['1','2','3','4','5','6','7','8','9']
                         ^ (bad-whitespace)
-Solution.py:97:28: C0326: Exactly one space required after comma
+Solution.py:102:28: C0326: Exactly one space required after comma
     whole = ['1','2','3','4','5','6','7','8','9']
                             ^ (bad-whitespace)
-Solution.py:97:32: C0326: Exactly one space required after comma
+Solution.py:102:32: C0326: Exactly one space required after comma
     whole = ['1','2','3','4','5','6','7','8','9']
                                 ^ (bad-whitespace)
-Solution.py:97:36: C0326: Exactly one space required after comma
+Solution.py:102:36: C0326: Exactly one space required after comma
     whole = ['1','2','3','4','5','6','7','8','9']
                                     ^ (bad-whitespace)
-Solution.py:97:40: C0326: Exactly one space required after comma
+Solution.py:102:40: C0326: Exactly one space required after comma
     whole = ['1','2','3','4','5','6','7','8','9']
                                         ^ (bad-whitespace)
-Solution.py:97:44: C0326: Exactly one space required after comma
+Solution.py:102:44: C0326: Exactly one space required after comma
     whole = ['1','2','3','4','5','6','7','8','9']
                                             ^ (bad-whitespace)
-Solution.py:103:0: C0303: Trailing whitespace (trailing-whitespace)
-Solution.py:154:0: C0305: Trailing newlines (trailing-newlines)
+Solution.py:108:0: C0303: Trailing whitespace (trailing-whitespace)
+Solution.py:109:12: C0326: Exactly one space required after comma
+def hori(lis,i,j):
+            ^ (bad-whitespace)
+Solution.py:109:14: C0326: Exactly one space required after comma
+def hori(lis,i,j):
+              ^ (bad-whitespace)
+Solution.py:110:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Solution.py:111:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Solution.py:112:0: W0311: Bad indentation. Found 6 spaces, expected 8 (bad-indentation)
+Solution.py:113:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Solution.py:114:12: C0326: Exactly one space required after comma
+def veri(lis,i,j):
+            ^ (bad-whitespace)
+Solution.py:114:14: C0326: Exactly one space required after comma
+def veri(lis,i,j):
+              ^ (bad-whitespace)
+Solution.py:115:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Solution.py:116:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Solution.py:117:0: W0311: Bad indentation. Found 6 spaces, expected 8 (bad-indentation)
+Solution.py:118:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Solution.py:159:0: C0305: Trailing newlines (trailing-newlines)
 Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
 Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
 Solution.py:2:0: C0111: Missing function docstring (missing-docstring)
 Solution.py:11:8: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+Solution.py:17:8: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
 Solution.py:20:8: C0103: Variable name "ch" doesn't conform to snake_case naming style (invalid-name)
 Solution.py:22:8: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
 Solution.py:28:12: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
 Solution.py:33:0: C0111: Missing function docstring (missing-docstring)
-Solution.py:35:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
-Solution.py:37:8: C0103: Variable name "m" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:39:8: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:39:32: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:40:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:41:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:43:10: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:43:34: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:44:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:45:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:47:10: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:47:34: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:48:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:49:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:51:10: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:51:34: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:52:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:53:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:55:10: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:55:34: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:56:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:57:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:59:10: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:59:34: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:60:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:61:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:63:10: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:63:34: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:64:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:65:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:67:10: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:67:34: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:68:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:69:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:71:10: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:71:34: R1716: Simplify chained comparison between the operands (chained-comparison)
-Solution.py:72:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:73:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:81:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
-Solution.py:81:8: C0103: Variable name "h" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:33:0: R0912: Too many branches (31/12) (too-many-branches)
-Solution.py:87:0: C0111: Missing function docstring (missing-docstring)
-Solution.py:99:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
-Solution.py:99:8: C0103: Variable name "h" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:33:0: R0914: Too many local variables (16/15) (too-many-locals)
+Solution.py:37:4: R1705: Unnecessary "else" after "return" (no-else-return)
+Solution.py:40:8: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+Solution.py:42:12: C0103: Variable name "m" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:44:12: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:44:36: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:45:16: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:46:20: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:48:14: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:48:38: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:49:16: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:50:20: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:52:14: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:52:38: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:53:16: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:54:20: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:56:14: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:56:38: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:57:16: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:58:20: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:60:14: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:60:38: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:61:16: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:62:20: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:64:14: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:64:38: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:65:16: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:66:20: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:68:14: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:68:38: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:69:16: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:70:20: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:72:14: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:72:38: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:73:16: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:74:20: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:76:14: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:76:38: R1716: Simplify chained comparison between the operands (chained-comparison)
+Solution.py:77:16: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:78:20: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:86:8: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+Solution.py:86:12: C0103: Variable name "h" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:33:0: R0912: Too many branches (33/12) (too-many-branches)
+Solution.py:92:0: C0111: Missing function docstring (missing-docstring)
+Solution.py:104:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+Solution.py:104:8: C0103: Variable name "h" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:109:0: C0111: Missing function docstring (missing-docstring)
+Solution.py:111:2: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+Solution.py:109:13: W0613: Unused argument 'i' (unused-argument)
+Solution.py:114:0: C0111: Missing function docstring (missing-docstring)
+Solution.py:116:2: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+Solution.py:114:13: W0613: Unused argument 'i' (unused-argument)
 Solution.py:1:0: W0611: Unused import re (unused-import)
 
 --------------------------------------------------------------------
-Your code has been rated at -1.35/10 (previous run: -1.10/10, -0.25)
+Your code has been rated at -2.08/10 (previous run: -1.35/10, -0.73)
 
