@@ -10,6 +10,7 @@ def main():
 			lis.append(temp)		
 			temp = []
 		temp.append(inp[i])
+	print(lis)
 	for i in range(len(lis)):
 		for j in range(len(lis[0])):
 			if lis[i][j] == '.':
@@ -45,15 +46,15 @@ def sudoku(lis,i,j):
 			for y in range(6,9):
 				tem.append(lis[x][y])
 	elif (i >= 6 and i <= 8) and (j >= 0 and j <= 2):
-		for x in range(6,8):
+		for x in range(6,9):
 			for y in range(0,3):
 				tem.append(lis[x][y])
 	elif (i >= 6 and i <= 8) and (j >= 3 and j <= 5):
-		for x in range(6,8):
+		for x in range(6,9):
 			for y in range(3,6):
 				tem.append(lis[x][y])
 	elif (i >= 6 and i <= 8) and (j >= 6 and j <= 8):
-		for x in range(6,8):
+		for x in range(6,9):
 			for y in range(6,9):
 				tem.append(lis[x][y])
 	string = ''.join(tem)
