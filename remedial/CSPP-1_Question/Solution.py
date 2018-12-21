@@ -2,7 +2,7 @@ import re
 def main():
 	inp = input()
 	inp = list(inp)
-	if(len(input) == 81):
+	if len(inp) == 81:
 		print("Given sudoku is solved")
 	else:
 		lis = []

@@ -2,7 +2,6 @@
 Solution.py:3:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
 Solution.py:4:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
 Solution.py:5:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Solution.py:5:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
 Solution.py:6:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
 Solution.py:7:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
 Solution.py:8:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
@@ -259,5 +258,5 @@ Solution.py:90:5: C0103: Variable name "h" doesn't conform to snake_case naming 
 Solution.py:1:0: W0611: Unused import re (unused-import)
 
 ----------------------------------------------------------------------
-Your code has been rated at -11.48/10 (previous run: -11.11/10, -0.37)
+Your code has been rated at -11.36/10 (previous run: -11.48/10, +0.12)
 
