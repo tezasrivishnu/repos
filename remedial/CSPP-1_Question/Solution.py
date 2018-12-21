@@ -31,7 +31,6 @@ def main():
                         res = sudoku(lis,i,j)
                         print(res)
 def sudoku(lis,i,j):
-    print("here")
     tem = []
     for k in range(len(lis)):
         tem.append(lis[k][j])
@@ -82,7 +81,6 @@ def sudoku(lis,i,j):
     for h in range(len(whole)):
         if whole[h] not in inti:
             numbers.append(whole[h])
-    print(numbers)
     string1 = list(map(str,numbers))
     string1 = ''.join(string1)
     return string1
