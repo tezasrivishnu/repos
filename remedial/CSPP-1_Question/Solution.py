@@ -18,14 +18,15 @@ def main():
         #   print(lis[i])
         #   print()
         ch = '.'
-        if ch not in lis:
-            print("Given sudoku is solved")
-        else:
-            for i in range(len(lis)):
-                for j in range(len(lis[0])):
-                    if lis[i][j] == '.':
-                        res = sudoku(lis,i,j)
-                        print(res)
+        for i in range(len(lis)):
+            if ch not in lis:
+                print("Given sudoku is solved")
+            else:
+                for i in range(len(lis)):
+                    for j in range(len(lis[0])):
+                        if lis[i][j] == '.':
+                            res = sudoku(lis,i,j)
+                            print(res)
 def sudoku(lis,i,j):
     print("here")
     tem = []

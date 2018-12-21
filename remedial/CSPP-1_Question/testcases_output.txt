@@ -1,8 +1,16 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 Given sudoku is solved
 
 Your Output: 
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 Given sudoku is solved
 ----------------------------------------
 
@@ -20,6 +28,14 @@ Expected Output:
 
 Your Output: 
 Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -36,6 +52,14 @@ Expected Output:
 
 Your Output: 
 Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -46,6 +70,14 @@ Expected Output:
 
 Your Output: 
 Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -55,6 +87,14 @@ Expected Output:
 9
 
 Your Output: 
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 Given sudoku is solved
 ----------------------------------------
 
@@ -72,6 +112,14 @@ Expected Output:
 
 Your Output: 
 Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -87,6 +135,14 @@ Expected Output:
 3
 
 Your Output: 
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 Given sudoku is solved
 ----------------------------------------
 
@@ -104,6 +160,14 @@ Expected Output:
 
 Your Output: 
 Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -119,6 +183,14 @@ Expected Output:
 6
 
 Your Output: 
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 Given sudoku is solved
 ----------------------------------------
 
@@ -136,6 +208,14 @@ Expected Output:
 
 Your Output: 
 Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -151,6 +231,14 @@ Expected Output:
 8
 
 Your Output: 
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 Given sudoku is solved
 ----------------------------------------
 
@@ -168,6 +256,14 @@ Expected Output:
 
 Your Output: 
 Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -184,6 +280,14 @@ Expected Output:
 
 Your Output: 
 Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -199,6 +303,14 @@ Expected Output:
 469
 
 Your Output: 
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 Given sudoku is solved
 ----------------------------------------
 
@@ -224,6 +336,14 @@ Expected Output:
 469
 
 Your Output: 
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 Given sudoku is solved
 ----------------------------------------
 
@@ -264,6 +384,14 @@ Expected Output:
 
 Your Output: 
 Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 16: Failed ##########
@@ -271,6 +399,14 @@ Expected Output:
 Invalid Sudoku:Duplicate values
 
 Your Output: 
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 Given sudoku is solved
 ----------------------------------------
 
@@ -287,6 +423,14 @@ Expected Output:
 Invalid Sudoku:Duplicate values
 
 Your Output: 
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 Given sudoku is solved
 ----------------------------------------
 
@@ -359,6 +503,14 @@ Expected Output:
 
 Your Output: 
 Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 20: Passed ##########
@@ -425,6 +577,14 @@ Expected Output:
 
 Your Output: 
 Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 22: Failed ##########
@@ -490,6 +650,14 @@ Expected Output:
 
 Your Output: 
 Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 23: Failed ##########
@@ -520,6 +688,14 @@ Expected Output:
 6
 
 Your Output: 
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 Given sudoku is solved
 ----------------------------------------
 
@@ -564,6 +740,14 @@ Expected Output:
 19
 
 Your Output: 
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
+Given sudoku is solved
 Given sudoku is solved
 ----------------------------------------
 
