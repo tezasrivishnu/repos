@@ -10,7 +10,6 @@ def main():
 			lis.append(temp)		
 			temp = []
 		temp.append(inp[i])
-	print(lis)
 	for i in range(len(lis)):
 		for j in range(len(lis[0])):
 			if lis[i][j] == '.':
