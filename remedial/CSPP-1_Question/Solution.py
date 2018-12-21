@@ -10,11 +10,15 @@ def main():
 			lis.append(temp)		
 			temp = []
 		temp.append(inp[i])
+	lis.append(temp)
 	for i in range(len(lis)):
 		for j in range(len(lis[0])):
 			if lis[i][j] == '.':
 				print(sudoku(lis,i,j))
 def sudoku(lis,i,j):
+	# for i in range(len(lis)):
+	# 	print(lis[i])
+	# 	print()
 	tem = []
 	for k in range(len(lis)):
 		tem.append(lis[k][j])
