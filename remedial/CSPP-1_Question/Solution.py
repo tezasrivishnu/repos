@@ -84,33 +84,33 @@ def sudoku(lis,i,j):
     string1 = list(map(str,numbers))
     string1 = ''.join(string1)
     return string1
-def notthere(temp):
-    # num = []
-    # horve = list(set(horve))
-    # sq = list(set(sq))
-    # print(horve)
-    # print(sq)
-    # for i in range(len(sq)):
-    #   if sq[i] not in horve:
-    #       num.append(sq[i])
-    # return num
-    whole = ['1','2','3','4','5','6','7','8','9']
-    numbers = []
-    for h in range(len(whole)):
-        if whole[h] not in temp:
-            numbers.append(whole[h])
-    return numbers
+# def notthere(temp):
+#     # num = []
+#     # horve = list(set(horve))
+#     # sq = list(set(sq))
+#     # print(horve)
+#     # print(sq)
+#     # for i in range(len(sq)):
+#     #   if sq[i] not in horve:
+#     #       num.append(sq[i])
+#     # return num
+#     whole = ['1','2','3','4','5','6','7','8','9']
+#     numbers = []
+#     for h in range(len(whole)):
+#         if whole[h] not in temp:
+#             numbers.append(whole[h])
+#     return numbers
     
-def hori(lis,i,j):
-  tem = []
-  for k in range(len(lis)):
-      tem.append(lis[k][j])
-  return tem
-def veri(lis,i,j):
-  tem = []
-  for k in range(len(lis)):
-      tem.append(lis[k][j])
-  return tem
+# def hori(lis,i,j):
+#   tem = []
+#   for k in range(len(lis)):
+#       tem.append(lis[k][j])
+#   return tem
+# def veri(lis,i,j):
+#   tem = []
+#   for k in range(len(lis)):
+#       tem.append(lis[k][j])
+#   return tem
 # def squ(lis,i,j):
 #   tem = []
 #   if (i >= 0 and i <= 2) and (j >= 0 and j <= 2):

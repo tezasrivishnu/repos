@@ -111,51 +111,7 @@ Solution.py:79:28: C0326: Exactly one space required after comma
 Solution.py:84:26: C0326: Exactly one space required after comma
     string1 = list(map(str,numbers))
                           ^ (bad-whitespace)
-Solution.py:97:16: C0326: Exactly one space required after comma
-    whole = ['1','2','3','4','5','6','7','8','9']
-                ^ (bad-whitespace)
-Solution.py:97:20: C0326: Exactly one space required after comma
-    whole = ['1','2','3','4','5','6','7','8','9']
-                    ^ (bad-whitespace)
-Solution.py:97:24: C0326: Exactly one space required after comma
-    whole = ['1','2','3','4','5','6','7','8','9']
-                        ^ (bad-whitespace)
-Solution.py:97:28: C0326: Exactly one space required after comma
-    whole = ['1','2','3','4','5','6','7','8','9']
-                            ^ (bad-whitespace)
-Solution.py:97:32: C0326: Exactly one space required after comma
-    whole = ['1','2','3','4','5','6','7','8','9']
-                                ^ (bad-whitespace)
-Solution.py:97:36: C0326: Exactly one space required after comma
-    whole = ['1','2','3','4','5','6','7','8','9']
-                                    ^ (bad-whitespace)
-Solution.py:97:40: C0326: Exactly one space required after comma
-    whole = ['1','2','3','4','5','6','7','8','9']
-                                        ^ (bad-whitespace)
-Solution.py:97:44: C0326: Exactly one space required after comma
-    whole = ['1','2','3','4','5','6','7','8','9']
-                                            ^ (bad-whitespace)
 Solution.py:103:0: C0303: Trailing whitespace (trailing-whitespace)
-Solution.py:104:12: C0326: Exactly one space required after comma
-def hori(lis,i,j):
-            ^ (bad-whitespace)
-Solution.py:104:14: C0326: Exactly one space required after comma
-def hori(lis,i,j):
-              ^ (bad-whitespace)
-Solution.py:105:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
-Solution.py:106:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
-Solution.py:107:0: W0311: Bad indentation. Found 6 spaces, expected 8 (bad-indentation)
-Solution.py:108:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
-Solution.py:109:12: C0326: Exactly one space required after comma
-def veri(lis,i,j):
-            ^ (bad-whitespace)
-Solution.py:109:14: C0326: Exactly one space required after comma
-def veri(lis,i,j):
-              ^ (bad-whitespace)
-Solution.py:110:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
-Solution.py:111:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
-Solution.py:112:0: W0311: Bad indentation. Found 6 spaces, expected 8 (bad-indentation)
-Solution.py:113:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
 Solution.py:154:0: C0305: Trailing newlines (trailing-newlines)
 Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
 Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
@@ -206,17 +162,8 @@ Solution.py:73:16: C0103: Variable name "y" doesn't conform to snake_case naming
 Solution.py:81:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
 Solution.py:81:8: C0103: Variable name "h" doesn't conform to snake_case naming style (invalid-name)
 Solution.py:33:0: R0912: Too many branches (31/12) (too-many-branches)
-Solution.py:87:0: C0111: Missing function docstring (missing-docstring)
-Solution.py:99:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
-Solution.py:99:8: C0103: Variable name "h" doesn't conform to snake_case naming style (invalid-name)
-Solution.py:104:0: C0111: Missing function docstring (missing-docstring)
-Solution.py:106:2: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
-Solution.py:104:13: W0613: Unused argument 'i' (unused-argument)
-Solution.py:109:0: C0111: Missing function docstring (missing-docstring)
-Solution.py:111:2: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
-Solution.py:109:13: W0613: Unused argument 'i' (unused-argument)
 Solution.py:1:0: W0611: Unused import re (unused-import)
 
 --------------------------------------------------------------------
-Your code has been rated at -2.02/10 (previous run: -2.14/10, +0.12)
+Your code has been rated at -0.98/10 (previous run: -0.98/10, +0.00)
 
