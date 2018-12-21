@@ -6,7 +6,7 @@ Your Output:
 Given sudoku is solved
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 7
 7
@@ -19,14 +19,15 @@ Expected Output:
 7
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+7
+7
+7
+7
+7
+7
+7
+7
+7
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -42,31 +43,27 @@ Expected Output:
 9
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+3
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+6
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 5
 6
 2
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+5
+6
+2
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -76,14 +73,9 @@ Expected Output:
 9
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -99,14 +91,15 @@ Expected Output:
 15
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+3
+7
+4
+6
+8
+2
+9
+1
+5
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -122,14 +115,15 @@ Expected Output:
 3
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -145,17 +139,18 @@ Expected Output:
 9
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 
-########## Testcase 8: Failed ##########
+########## Testcase 8: Passed ##########
 Expected Output: 
 1
 5
@@ -168,14 +163,15 @@ Expected Output:
 6
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+1
+5
+2
+4
+8
+9
+3
+7
+6
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -191,14 +187,15 @@ Expected Output:
 469
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+8
+7
+3
+5
+1
+2
+9
+6
+4
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -214,14 +211,15 @@ Expected Output:
 8
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -237,14 +235,15 @@ Expected Output:
 4
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -260,14 +259,15 @@ Expected Output:
 8
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -283,14 +283,15 @@ Expected Output:
 469
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -315,14 +316,24 @@ Expected Output:
 469
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 
 ########## Testcase 15: Failed ##########
@@ -361,14 +372,38 @@ Expected Output:
 23689
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 
 ########## Testcase 16: Failed ##########
@@ -376,14 +411,15 @@ Expected Output:
 Invalid Sudoku:Duplicate values
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 
 ########## Testcase 17: Passed ##########
@@ -394,19 +430,12 @@ Your Output:
 Invalid input
 ----------------------------------------
 
-########## Testcase 18: Failed ##########
+########## Testcase 18: Passed ##########
 Expected Output: 
 Invalid Sudoku:Duplicate values
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 
 ########## Testcase 19: Failed ##########
@@ -477,14 +506,70 @@ Expected Output:
 235689
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 
 ########## Testcase 20: Passed ##########
@@ -550,14 +635,57 @@ Expected Output:
 1346
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 
 ########## Testcase 22: Failed ##########
@@ -622,14 +750,64 @@ Expected Output:
 4567
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 
 ########## Testcase 23: Failed ##########
@@ -660,14 +838,30 @@ Expected Output:
 6
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+7
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 
 ########## Testcase 24: Failed ##########
@@ -711,13 +905,42 @@ Expected Output:
 19
 
 Your Output: 
-Traceback (most recent call last):
-  File "Solution.py", line 158, in <module>
-    main()
-  File "Solution.py", line 31, in main
-    res = sudoku(lis,i,j)
-  File "Solution.py", line 37, in sudoku
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
-TypeError: 'int' object is not iterable
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 

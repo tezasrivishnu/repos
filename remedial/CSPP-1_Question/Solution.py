@@ -34,7 +34,7 @@ def sudoku(lis,i,j):
     tem = []
     hor = hori(lis,i,j)
     ver = veri(lis,i,j)
-    if len(ver) != set(len(ver)) or len(hor) != set(len(hor)):
+    if len(ver) != len(set(ver)) or len(hor) != len(set(hor)):
         return "Invalid Sudoku:Duplicate values"
     else:
         for k in range(len(lis)):
