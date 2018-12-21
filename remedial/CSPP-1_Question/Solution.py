@@ -14,9 +14,9 @@ def main():
                 temp = []
             temp.append(inp[i])
         lis.append(temp)
-        for i in range(len(lis)):
-          print(lis[i])
-          print()
+        # for i in range(len(lis)):
+        #   print(lis[i])
+        #   print()
         ch = '.'
         count = 0
         for i in range(len(lis)):

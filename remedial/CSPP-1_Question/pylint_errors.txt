@@ -12,8 +12,6 @@ Solution.py:12:27: C0326: Exactly one space required around comparison
             if i%9==0 and i!=0:
                            ^^ (bad-whitespace)
 Solution.py:13:32: C0303: Trailing whitespace (trailing-whitespace)
-Solution.py:18:0: W0311: Bad indentation. Found 10 spaces, expected 12 (bad-indentation)
-Solution.py:19:0: W0311: Bad indentation. Found 10 spaces, expected 12 (bad-indentation)
 Solution.py:25:17: C0326: Exactly one space required after comparison
         if count ==9:
                  ^^ (bad-whitespace)
@@ -175,7 +173,6 @@ Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case nam
 Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
 Solution.py:2:0: C0111: Missing function docstring (missing-docstring)
 Solution.py:11:8: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
-Solution.py:17:8: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
 Solution.py:20:8: C0103: Variable name "ch" doesn't conform to snake_case naming style (invalid-name)
 Solution.py:22:8: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
 Solution.py:28:12: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
@@ -235,5 +232,5 @@ Solution.py:114:13: W0613: Unused argument 'i' (unused-argument)
 Solution.py:1:0: W0611: Unused import re (unused-import)
 
 --------------------------------------------------------------------
-Your code has been rated at -2.08/10 (previous run: -1.35/10, -0.73)
+Your code has been rated at -2.14/10 (previous run: -2.08/10, -0.06)
 
